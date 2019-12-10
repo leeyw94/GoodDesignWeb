@@ -1,0 +1,100 @@
+﻿@using SmartFactory.Models
+@model IEnumerable<SmartFactory.Models.code_nationality>
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+
+}
+
+    <div>
+        <partial name="~/Views/Sys/setting_menu.cshtml" />
+
+    </div>
+    <div class="container sub_page ">
+
+        <div class="sub_title_black">
+             @SmartFactory.Util.get_word.language_code(language, "language") @SmartFactory.Util.get_word.language_code(language, "setting")
+        </div>
+
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "name")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "whethertouse")
+
+
+
+                    </th>
+
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "date")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "id")
+                    </th>
+                    <th class="check_auth">  @SmartFactory.Util.get_word.language_code(language, "edit")</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (code_nationality item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.code_name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.use_yn)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.write_date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.writer_id)
+                        </td>
+                        <td class="check_auth td-actions text-right">
+                            <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                <a href="/code/code_nationality?idx=@item.code_id"> <i class="fa fa-edit"></i></a>
+                            </span>
+                            <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                                <img src="~/images/common/s_icon_del.gif" onclick="del_it('/code/code_nationality_action?idx=@item.code_id') " />
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+
+
+        <fieldset>
+            <div class="form-group check_auth">
+                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('/code/code_nationality') ">
+
+                        @SmartFactory.Util.get_word.language_code(language, "create")
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>

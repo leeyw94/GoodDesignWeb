@@ -1,0 +1,79 @@
+﻿@{
+
+    string url_check = Context.Request.Path.ToString() ?? "";
+    //Context.Request.Path
+    string active = "";
+
+
+    string tab = "1";
+
+
+    if (url_check == "/code/code_nationality")
+    {
+        tab = "1";
+    }
+
+    if (url_check.StartsWith("/sys/company_set"))
+    {
+        tab = "2";
+    }
+
+    if (url_check.StartsWith("/sys/department"))
+    {
+        tab = "3";
+    }
+    if (url_check.StartsWith("/sys/user"))
+    {
+        tab = "4";
+    }
+    if (url_check.StartsWith("/board/board"))
+    {
+        tab = "5";
+    }
+
+    if (url_check.StartsWith("/code/code"))
+    {
+        tab = "6";
+    }
+
+ string language = Context.Request.Cookies["language"] ?? "korea"; 
+
+}
+<style>
+    .nav_setting li {
+        width: 190px;
+    }
+</style>
+<div class="container" style="font-size:0.75em">
+    <div>
+        <div class="col-md-12" style="padding: 0">
+            <div class="card-wizard">
+
+                <ul class="nav nav-pills nav_setting " style="border-bottom:solid 2px #23ccef">
+                    <li @if (tab == "1") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0;"><a href="/code/code_nationality_list" class="loading">▷  @SmartFactory.Util.get_word.language_code(language, "language")</a></li>
+
+                    <li @if (tab == "2") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0;"><a href="/sys/company_set_list" class="loading">▷ @SmartFactory.Util.get_word.language_code(language, "company")</a></li>
+
+
+                    <li @if (tab == "3") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0;"><a href="/sys/department_set_list" class="loading">▷ @SmartFactory.Util.get_word.language_code(language, "department")</a></li>
+
+                    <li @if (tab == "4") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0;"><a href="/sys/user_set_list" class="loading">▷ @SmartFactory.Util.get_word.language_code(language, "user") </a></li>
+
+
+
+                    <li @if (tab == "5") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0"><a href="/board/board_set_list" class="loading">▷ @SmartFactory.Util.get_word.language_code(language, "boardsettings")</a></li>
+
+                    <li @if (tab == "6") { <text> class="active" </text> }
+                    style="margin: 0; padding: 0"><a href="/code/code_index" class="loading">▷ @SmartFactory.Util.get_word.language_code(language, "codesetting")</a></li>
+
+
+                 </ul>
+             </div>
+        </div>
+    </div>
+</div>

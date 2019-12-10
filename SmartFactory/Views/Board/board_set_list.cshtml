@@ -1,0 +1,144 @@
+﻿@using SmartFactory.Models
+@model IEnumerable<SmartFactory.Models.BoardMenu>
+@{string language = Context.Request.Cookies["language"] ?? "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+}
+
+
+<partial name="~/Views/sys/setting_menu.cshtml" />
+
+<div class="container  sub_page">
+
+
+
+    <div class="sub_title_black">
+        @SmartFactory.Util.get_word.language_code(language, "boardSettings")
+    </div>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "title")
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "Type")
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "open")
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "company")
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "department")
+                </th>
+                <th>
+                    Type
+                </th>
+                <th class="check_auth">@SmartFactory.Util.get_word.language_code(language, "edit")</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BoardMenu item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/sys/board_set?idx=@item.idx ">      @Html.DisplayFor(modelItem => item.title)</a>
+                    </td>
+                    <td>
+                        @{ get_type(item.BoardType_idx); }
+
+
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.open_yn)
+                    </td>
+
+                    <td>
+
+
+                        @{ get_comany(item.company_idx); }
+                    </td>
+
+                    <td>
+                        @{ get_department(item.department_idx); }
+                    </td>
+
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BoardType_idxNavigation.code_name)
+                    </td>
+                    <td>
+                        <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                            <a href="/board/board_set?idx=@item.idx ">
+
+
+                                <img src="~/images/common/s_edit_icon.gif" />
+                            </a>
+                        </span>
+                        <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                            <a href="/board/board_set_action?idx=@item.idx&mode_type=D">  <img src="~/images/common/s_icon_del.gif" /></a>
+                        </span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <fieldset>
+        <div class="form-group check_auth">
+            <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('board_set') ">
+
+                    @SmartFactory.Util.get_word.language_code(language, "create")
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+
+@functions{
+
+    db_e db = new db_e();
+
+    public void get_comany(int _code)
+    {
+
+
+        var _name = (from a in db.company where a.idx == _code select a.company_name).FirstOrDefault() ?? "";
+        <span>@_name</span>
+    }
+
+    public void get_department(int _code)
+    {
+
+
+
+        var _name = (from a in db.department where a.idx == _code select a.department_name).FirstOrDefault() ?? "";
+        <span>@_name</span>
+    }
+
+    public void get_type(int _code)
+    {
+
+
+
+        var _name = (from a in db.BoardCode where a.code_id == _code select a.code_name).FirstOrDefault() ?? "";
+        <span>@_name</span>
+    }
+}

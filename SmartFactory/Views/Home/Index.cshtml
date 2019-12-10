@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+ 
+</div>
+
+
+<ul>
+    @if (SignInManager.IsSignedIn(User))
+
+    {
+        <li>
+            <a href="/account/LogOff" class="text-danger">
+                <i class="pe-7s-close-circle"></i>
+
+                Log Out
+
+            </a>
+        </li>
+    }
+    <li style="border-top: solid 1px #eee; cursor: help; font-size: 0.75em; padding: 2px; text-indent: 10px;font-weight:bold">User ID : @User.Identity.Name</li>
+
+
+</ul>

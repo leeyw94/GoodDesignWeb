@@ -1,0 +1,148 @@
+﻿@model ReflectionIT.Mvc.Paging.IPagingList
+@* Fake Boostrap 5 based pager *@
+
+@{
+    var start = this.Model.StartPageIndex;
+    var stop = this.Model.StopPageIndex;
+
+    string urlcheck = Context.Request.Path;
+    string url_query = Context.Request.QueryString.ToString();
+    string page_directory = urlcheck.Split('/')[1];
+    string page_site = "xx";
+
+
+    if (string.IsNullOrEmpty(url_query))
+    {
+        try
+        {
+           url_query = "?cate="+ViewBag.카테고리;
+
+        }
+        catch
+        {
+            url_query = "?cate=1";
+
+        }
+        
+    }
+
+    try
+    {
+        page_site = urlcheck.Split('/')[2] + url_query;
+    }
+    catch
+    {
+        page_site = "index";
+    }
+
+
+
+
+}
+
+
+@if (this.Model.PageCount > 1)
+{
+    <ul class="pagination pagination-sm justify-content-end">
+
+        @if (start > 1)
+        {
+            <li class="page-item">
+                @if (page_site.Contains("page"))
+                {
+                    page_site = page_site.Replace("page=", "");
+                    <a href="@page_site&page=1" class="page-link" aria-label="First">1</a>
+                }
+                else
+                {
+                    <a href="@page_site&page=1" class="page-link" aria-label="First">1</a>
+
+                }
+            </li>
+        }
+
+        @if (this.Model.PageIndex > 1)
+        {
+            <li class="page-item">
+
+                @if (page_site.Contains("page"))
+                {
+                    page_site = page_site.Replace("page=", "");
+                    <a href="@page_site&page=@(this.Model.PageIndex - 1)" class="page-link" aria-label="Previous">  <span aria-hidden="true">&laquo;</span></a>
+                }
+                else
+                {
+                    <a href="@page_site&page=@(this.Model.PageIndex - 1)" class="page-link" aria-label="Previous">  <span aria-hidden="true">&laquo;</span></a>
+
+                }
+
+
+
+            </li>
+        }
+
+        @for (int i = start; i <= stop; i++)
+        {
+            <li class="page-item @((Model.PageIndex == i) ? "active" : null)">
+
+                @if (page_site.Contains("page"))
+                {
+                    page_site = page_site.Replace("page=", "");
+                    <a href="@page_site&page=@i" class="page-link">@i</a>
+                }
+                else
+                {
+                    <a href="@page_site&page=@i" class="page-link">@i</a>
+
+                }
+
+            </li>
+        }
+
+        @if (this.Model.PageIndex < this.Model.PageCount)
+        {
+            <li class="page-item">
+
+
+                @if (page_site.Contains("page"))
+                {
+                    page_site = page_site.Replace("page=", "");
+                    <a href="@page_site&page=@(this.Model.PageIndex + 1)" aria-label="Next" class="page-link"> <span aria-hidden="true">&raquo;</span></a>
+                }
+                else
+                {
+                    <a href="@page_site&page=@(this.Model.PageIndex + 1)" aria-label="Next" class="page-link"> <span aria-hidden="true">&raquo;</span></a>
+
+                }
+
+
+
+
+            </li>
+        }
+
+        @if (stop < this.Model.PageCount)
+        {
+            <li class="page-item">
+                <a href="@Url.Action(Model.Action, Model.GetRouteValueForPage(this.Model.PageCount))" aria-label="Last" class="page-link">
+                    <span aria-hidden="true">@this.Model.PageCount</span>
+                </a>
+
+
+                @if (page_site.Contains("page"))
+                {
+                    page_site = page_site.Replace("page=", "");
+                    <a href="@page_site&page=@(this.Model.PageCount)" aria-label="Last" class="page-link">  <span aria-hidden="true">@this.Model.PageCount</span></a>
+                }
+                else
+                {
+                    <a href="@page_site&page=@(this.Model.PageCount)" aria-label="Last" class="page-link"> <span aria-hidden="true">@this.Model.PageCount</span></a>
+
+                }
+
+
+            </li>
+        }
+
+    </ul>
+}

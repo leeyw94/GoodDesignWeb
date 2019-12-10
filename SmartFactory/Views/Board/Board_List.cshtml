@@ -1,0 +1,402 @@
+﻿
+@model ReflectionIT.Mvc.Paging.PagingList<SmartFactory.Models.BoardList>
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+@using SmartFactory.Util;
+
+
+
+@{string language = "korea"; }
+@{
+
+
+    int i = 0;
+    string Mode = "i";
+    if (string.IsNullOrEmpty(Context.Request.Query["cate"]))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+    string cate = Context.Request.Query["cate"];
+
+    if (string.IsNullOrEmpty(cate))
+    {
+        cate = ViewBag.카테고리;
+    }
+
+
+    string search_all_type = ViewBag.search_all_type ?? "1";
+    string search_all = ViewBag.search_all ?? "";
+    string main_bg_color = "azure";
+    string board_style = "tbl_red";
+
+
+
+    var start = this.Model.StartPageIndex;
+    var stop = this.Model.StopPageIndex;
+
+    string urlcheck = Context.Request.Path;
+    string url_query = Context.Request.QueryString.ToString();
+    string page_directory = urlcheck.Split('/')[1];
+    string page_site = "xx";
+
+
+
+
+    try
+    {
+        page_site = urlcheck.Split('/')[2] + url_query;
+    }
+    catch
+    {
+        page_site = "index";
+    }
+
+
+
+
+
+    try
+    {
+
+        board_style = SmartFactory.Util.get_word.style_color(main_bg_color);
+    }
+    catch
+    {
+
+
+    }
+
+    string check_menu = "a";
+
+    //if (Request["cate"] == "5")
+    //{
+
+    //    check_menu = "b";
+    //}
+    //if (Request["cate"] == "6")
+    //{
+
+    //    check_menu = "b";
+    //}
+    //if (Request["cate"] == "7")
+    //{
+
+    //    check_menu = "b";
+    //}
+    //if (Request["cate"] == "8")
+    //{
+
+    //    check_menu = "b";
+    //}
+
+    //string check_file = "";
+
+
+
+}
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var cate = "@cate";
+        var mode = '@Mode';
+        var search_all_type = '@search_all_type'
+
+        var file_show = '@ViewBag.파일';
+
+        if (search_all_type == "") {
+            search_all_type = "1";
+        }
+       
+        if (file_show == "Y") {
+            $(".file_show").css("display", "block");
+        }
+        else {
+             $(".file_show").css("display", "none");
+        }
+
+
+        $('#search_all_type option[value=' + search_all_type + ']').attr('selected', 'selected');
+
+
+
+    });
+
+    function search() {
+        var cate = $("#BD_BM_idx").val();
+
+        location.href = "/board/board_list/?cate=" + cate;
+
+    }
+
+
+    function search_it() {
+
+        //로딩바=====================================================================================================================================================
+        $('<div id="loading" style="position: absolute; z-index:20;"> <img src ="/images/common/ajax-loader11.gif" /></div>')
+            .insertBefore('#result').ajaxStart(function () {
+                $(this).show();
+
+            }).ajaxStop(function () {
+                $(this).hide();
+            });
+                //========================================================================================================================================================
+
+
+
+        $("#form1").submit();
+    }
+
+    function go_link(idx) {
+
+        var cate = "@cate";
+
+        location.href = "/board/boardview/?idx=" + idx + "&cate=" + cate;
+
+    }
+
+    function go_write() {
+        var cate = "@cate";
+
+
+        location.href = "/board/boardwrite/?cate=" + cate;
+
+    }
+
+    </script>
+<style>
+    .table thead tr {
+        border-bottom: solid 2px #000 !important;
+        border-top: solid 1px #000
+    }
+
+    .table tbody td {
+        border-bottom: dotted 1px #444 !important;
+        font-size: 14px;
+        font-family: 'NanumSquareR','sans-serif', Arial, serif;
+    }
+
+    .table tbody tr:last-child {
+        border-bottom: solid 1px #444 !important;
+    }
+
+    #search_all_type {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(/images/common/caret-down1.png) no-repeat 92% 48%;
+    }
+
+        #search_all_type::-ms-expand {
+            display: none;
+        }
+</style>
+<script src="~/Content/Board/Board.js"></script>
+<link href="~/Content/Board/board.css" rel="stylesheet" />
+
+@*@{
+
+        if (check_menu == "a")
+        {
+            @Html.Partial("~/Views/Layout/_menu.cshtml")
+        }
+
+        else if (check_menu == "b")
+        {
+
+            @Html.Partial("~/Views/Layout/_menu2.cshtml")
+        }
+    }*@
+
+<div class="container">
+    <div class="col-md-12 card " style=" clear:both; min-height:45vh;">
+        <div style="margin:20px 10px">
+
+
+            <div style="width:100%;padding:10px 0 20px 0">
+             <span class="sub_title_black" style="font-size:1.7rem;position:relative;top:2px;left:5px"> @ViewBag.타이틀 </span>
+            </div>
+
+
+
+            <table class="tbl_azure">
+                <thead>
+                    <tr>
+                        <th style="width: 60px" class="text-center">
+                            @{ order_link("idx", page_site, language);}
+
+                        </th>
+                        <th class="text-center" style="min-width:150px;">
+
+
+
+                            @{ order_link("title", page_site, language);}
+
+
+                        </th>
+
+                        <th class="text-left file_show" style="min-width:50px;"> 첨부</th>
+
+
+                        <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Writer")</th>
+
+                        @if (cate != "5")
+                        {
+
+                            <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Date")</th>
+                        }
+                        else
+                        {
+                            <th style="width: 100px" class="text-center">등록일</th>
+                        }
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (BoardList item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <span>@item.idx</span>
+
+                            </td>
+                            <td style="text-align:left">
+
+                                <span onclick="go('/board/boardview/?idx=@item.idx&cate=@cate') " style="cursor: pointer" class="loading">@item.title</span>
+
+                            </td>
+
+                           
+
+                            <td class="file_show">
+                                @{file_link(item.fileId);}
+
+                            </td>
+
+
+                            <td class="text-center">@item.writer</td>
+                            <td class="text-center">
+
+
+
+                                <span>@item.writeDate.ToShortDateString()</span>
+
+
+                            </td>
+                        </tr>
+                        i++;
+
+                    }
+                </tbody>
+            </table>
+            @if (ViewBag.권한 == "Y" || ViewBag.권한 == "E")
+            {
+                <div class="row" style="margin:20px 0 5px 0;">
+
+                    <div class="col-md-2 btn btn-fill btn-info loading" style="float:right;width:110px;text-align:center ;cursor: pointer;background:#095eb1; border:0;" onclick="go_write()">
+                        <span> @SmartFactory.Util.get_word.language_code(language, "create")</span>
+                    </div>
+
+                </div>
+            }
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <nav aria-label="Suppliers navigation example">
+                        <vc:pager paging-list="@Model" />
+                    </nav>
+
+                </div>
+            </div>
+            <hr />
+            <form id="form1" name="form1" action="/Board/Board_list" method="post">
+                <div style="width:100% ;display:table;margin-bottom:10px">
+                    <div class="search-form" style="display:table;margin:0 auto">
+                        <div class="col-md-4 bottom" style="margin-bottom:20px">
+                            <input type="hidden" name="cate" id="cate" value="@cate" />
+                            <select name="search_all_type" id="search_all_type" class="form-control">
+                                <option value="1">Title + Content</option>
+                                <option value="2">Title</option>
+                                <option value="3">Writer</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-5 bottom" style="margin-bottom:20px">
+                            <input type="text" name="search_all" id="search_all" class="form-control" value="@ViewBag.search_all" />
+                        </div>
+                        <div class="col-md-2 bottom" style="margin-bottom:20px">
+                            <div class="btn btn-default btn-fill btn-wd btn-default" onclick="search_it() ">  @SmartFactory.Util.get_word.language_code(language, "search")</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+@functions {
+
+    public void order_link(string what, string page_site, string language)
+    {
+        if (Context.Request.Query["sortExpression"] == "-" + what)
+        {
+            page_site = page_site.Replace("sortExpression=", "");
+
+
+            <a href="@page_site&sortExpression=@what">▲ @SmartFactory.Util.get_word.language_code(language, what)</a>
+
+        }
+        else
+        {
+            page_site = page_site.Replace("sortExpression=", "");
+            <a href="@page_site&sortExpression=-@what">▼ @SmartFactory.Util.get_word.language_code(language, what)</a>
+        }
+
+    }
+
+    public void file_link(string id)
+    {
+
+
+
+        db_e db = new db_e();
+
+        var _list = (from a in db.BoardFile where a.Md_id == id && a.use_yn !="N" select a).ToList();
+
+        foreach (var item in _list)
+        {
+
+            string file_size = (Convert.ToDouble(item.file_size) / 1000).ToString("###,###") +"Kbyte";
+            <text>      
+
+    <img src="/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" title="@file_size" onclick="file_down('@item.ImagePath','@item.fileName')" />
+ </text>
+        }
+
+
+    }
+
+
+
+}
+<form id="file_download" action="~/Board/GetDownload" method="post">
+    <input type="hidden" id="link" name="link" />
+    <input type="hidden" id="file_name" name="file_name" />
+
+</form>
+<script>
+    
+    function file_down(s,n ) {
+       
+        $("#link").attr("value", s);
+        $("#file_name").attr("value", n);
+        $("#file_download").submit();
+
+    }
+
+</script>

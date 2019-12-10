@@ -1,0 +1,115 @@
+﻿@using SmartFactory.Models
+@model IEnumerable<SmartFactory.Models.company>
+
+@{string language =Context.Request.Cookies["language"] ?? "korea";
+    
+     try {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    } catch {
+
+
+    }
+    
+    
+    }
+
+@TempData["message"]
+    <div>
+        <partial name="~/Views/sys/setting_menu.cshtml" />
+
+    </div>
+
+    <div class="container sub_page ">
+        <div class="sub_title_black">
+            @SmartFactory.Util.get_word.language_code(language, "company") @SmartFactory.Util.get_word.language_code(language, "setting")
+        </div>
+        <hr />
+
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>@SmartFactory.Util.get_word.language_code(language, "num")</th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "company")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "CompanyType")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "language")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "date")
+                    </th>
+                    <th>
+                        @SmartFactory.Util.get_word.language_code(language, "open")
+                    </th>
+
+                    <th class="check_auth">@SmartFactory.Util.get_word.language_code(language, "edit")</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ int ii = 1;}
+                @foreach (company item in Model)
+                {
+                    <tr>
+                        <td>@ii</td>
+                        <td>
+                            <a href="/sys/company_set/?idx=@item.idx" style="font-weight: bold"> @Html.DisplayFor(modelItem => item.company_name)</a>
+                        </td>
+                        <td>
+                            @{get_comany_type(item.gubun_idx);}
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nationality)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.write_date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.use_yn)
+                        </td>
+
+
+                        <td class="check_auth">
+
+                            <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                <a href="/sys/company_set/?idx=@item.idx"><img src="~/images/common/s_edit_icon.gif" /></a>
+                            </span>
+                            <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                                <img src="~/images/common/s_icon_del.gif" onclick="del_it('/sys/company_set_action?idx=@item.idx') " />
+                            </span>
+                        </td>
+                    </tr>
+                    ii++;
+                }
+            </tbody>
+        </table>
+        <fieldset>
+            <div class="form-group check_auth">
+                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('company_set') ">
+
+                        @SmartFactory.Util.get_word.language_code(language, "create")
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+
+@functions{
+    public void get_comany_type(int _code)
+    {
+
+        db_e db = new db_e();
+
+        var _name = (from a in db.code_company where a.code_id == _code select a.code_name).FirstOrDefault() ?? "";
+        <span>@_name</span>
+    }
+
+
+}

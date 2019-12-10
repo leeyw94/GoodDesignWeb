@@ -1,0 +1,196 @@
+﻿@model SmartFactory.Models.BoardMenu
+@{
+
+    string Mode = "i";
+    string idx = Context.Request.Query["idx"];
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+}
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+
+ string company_idx = Context.Request.Query["company_idx"];
+
+ }
+
+
+<partial name="~/Views/sys/setting_menu.cshtml" />
+<div class="container sub_page">
+
+
+    <form action="~/Board/board_set_action" name="form1" id="form1" enctype="multipart/form-data">
+
+
+        <input type="hidden" name="idx" id="idx" value="@idx" />
+
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+
+            <div class="sub_title_black">
+                @SmartFactory.Util.get_word.language_code(language, "boardsetting")
+            </div>
+
+            <hr />
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "company")</label>
+                <div class="col-md-4">
+                    @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, new { @class = "selectpicker", @onchange = "search_it()" })
+
+                </div>
+            </div>
+
+            @if (!string.IsNullOrEmpty(company_idx) && company_idx != "0")
+            {
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "department")</label>
+                    <div class="col-md-4">
+                        @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, new { @class = "selectpicker" })
+
+                    </div>
+                </div>
+
+            }
+            else
+            {
+
+                <input type="hidden" name="department_idx" value="0" />
+            }
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "title")</label>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control" } })
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "Type")</label>
+                <div class="col-md-4">
+                    @Html.DropDownList("BoardType_idx", (SelectList)ViewBag.게시판코드, new { @class = "selectpicker" })
+
+                </div>
+            </div>
+
+
+
+
+            <hr />
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "open")</label>
+                <div class="col-md-2" style="padding-top: 7px">
+                    <input type="checkbox" id="open_yn" name="open_yn" data-toggle="switch" />
+                </div>
+
+
+
+            </div>
+            <hr />
+
+
+
+
+
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                        <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">
+                            @SmartFactory.Util.get_word.language_code(language, "save")
+                        </div>
+
+
+                        <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('board_set_list') ">
+
+                            @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+
+
+
+
+</div>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        //공개 여부 시작
+
+        var _mode = "@Mode";
+        var yn = "@Model.open_yn";
+        var BM_type = "@Model.BoardType_idx";
+        use_yn("open_yn", yn);
+
+
+        if (_mode == "e") {
+
+            $("input[name=BM_type][value='" + BM_type + "']").prop("checked", true);
+        }
+        else {
+            $("#open_yn").attr("checked", true);
+        }
+
+
+        //공개 여부 끝
+    });
+
+    function use_yn(_id, yn) {
+
+        var _mode = "@Mode";
+
+        var use_yn = $("#" + _id).val();
+
+        if (_mode == "e") {
+
+            if (yn == "Y") {
+                $("#" + _id).attr("checked", true);
+            } else {
+                $("#" + _id).attr("checked", false);
+            }
+
+        }
+
+    }
+
+    function save_it() {
+        check("BM_title", "form1");
+
+    }
+
+    function search_it() {
+        var company_idx = $("#company_idx").val();
+
+        location.href = "/board/board_set?company_idx=" + company_idx;
+
+    }
+    </script>

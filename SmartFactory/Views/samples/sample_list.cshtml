@@ -1,0 +1,74 @@
+﻿@model IEnumerable<SmartFactory.Models.sample>
+
+@{string language =  "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+}
+
+
+    <div class="container sub_page">
+
+
+        <div class="sub_title_black">
+            @SmartFactory.Util.get_word.language_code(language, "setting")
+        </div>
+        <hr />
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.userName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.writeDate)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.userName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.writeDate)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.idx">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.idx">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.idx">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+            <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('sample_set') ">
+
+                @SmartFactory.Util.get_word.language_code(language, "create")
+            </div>
+        </div>
+
+
+      
+    </div>

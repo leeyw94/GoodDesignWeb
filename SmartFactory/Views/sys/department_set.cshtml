@@ -1,0 +1,204 @@
+﻿@model SmartFactory.Models.department
+@{string language = Context.Request.Cookies["language"] ?? "korea"; }
+
+<div>
+    <partial name="~/Views/sys/setting_menu.cshtml" />
+
+</div>
+
+<div class="container sub_page">
+  
+
+                <div class="content">
+                    @using (Html.BeginForm("department_set_action", "sys", FormMethod.Post, new { enctype = "multipart/form-data", id = "form1", name = "form1" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <input type="hidden" name="idx" id="idx" value="@Context.Request.Query["idx"]" />
+
+                        <div class="form-horizontal">
+                            <div class="sub_title_black">
+                                @SmartFactory.Util.get_word.language_code(language, "department") @SmartFactory.Util.get_word.language_code(language, "setting")
+                            </div>
+                            <hr />
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "company")   @SmartFactory.Util.get_word.language_code(language, "select")</label>
+                                    <div class="col-md-4">
+
+                                        @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, new { @class = "selectpicker", @onchange = "show_list()" })
+
+                                    </div>
+
+
+                                </div>
+
+                            </fieldset>
+
+
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "department") @SmartFactory.Util.get_word.language_code(language, "name")</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.department_name, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+
+                                </div>
+                            </div>
+
+                            @*<div class="form-group">
+
+            <label class="col-sm-2 control-label">Department Auth</label>
+            <div class="col-md-6">
+                <input type="text" />
+                @Html.DropDownList("department_auth", (SelectList)ViewBag.권한,
+                           new { @class = "selectpicker" , @data_style = "btn-info btn-fill btn-block", multiple = "true" })
+
+
+            </div>
+
+        </div>*@
+                            <div class="form-group" id="auth_department">
+                                <label class="col-sm-2 control-label">Department Auth</label>
+                                <div class="col-md-6" style="margin-top: 8px; padding: 0px">
+
+
+                                    @{
+                                        if (User.Identity.Name == "insstek")
+                                        {
+                                            <table class="table table-hover table-striped" style="display: table">
+
+                                                @foreach (SelectListItem item in (SelectList)ViewBag.권한)
+                                                {
+                                                    <tr>
+                                                        <td style="width: 20px;"><input type='checkbox' name='department_auth' value='@item.Value' style="cursor: pointer" onclick=" checkit() " /></td>
+                                                        <td>
+
+                                                            @item.Text
+                                                        </td>
+                                                    </tr>
+                                                }
+
+                                            </table>
+                                        }
+
+                                    }
+                                    <input type="hidden" name="department_auth_temp" id="department_auth_temp" value="@Model.department_auth" />
+                                </div>
+
+
+
+                            </div>
+
+                            <hr />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "open") </label>
+                                <div class="col-md-2" style="padding-top: 7px" rel="tooltip" title="전체 부서 공유">
+                                    <input type="checkbox" id="use_yn" name="use_yn" checked data-toggle="switch" />
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <hr />
+                        <fieldset>
+                            <div class="form-group check_auth">
+                                <div class="col-md-10" style="display: table; margin: 20px; text-align: center;">
+                                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="save_it() ">
+                                        @SmartFactory.Util.get_word.language_code(language, "save")
+                                    </div>
+
+
+
+                                    <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/sys/department_set_list') ">
+
+                                        @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    }
+
+
+
+                </div>
+            
+</div>
+
+
+<script>
+
+    function checkit() {
+
+        //분류
+
+        var n = "";
+        $("input[name=department_auth]").each(function(i) {
+            if (this.checked) {
+                n += $(this).val() + ",";
+            }
+        });
+
+        $("#department_auth_temp").attr("value", n);
+
+    }
+
+    function save_it() {
+
+        check("department_name", "form1");
+
+
+    }
+
+
+    function change_it() {
+        var it = $("#company_id").val();
+
+        if (it != "insstek") {
+            $("#auth_department").css("display", "none");
+        } else {
+            $("#auth_department").css("display", "block");
+        }
+    }
+
+    $(document).ready(function() {
+        //   demo.showNotification();
+        // var auth_department = $("#auth_department").css("display","none");
+        $("#auth_department").css("display", "none");
+    });
+
+    function show_list() {
+
+        $("#auth_department").css("display", "none");
+        // 지역
+        var auth_name = $("#company_id").val();
+
+
+        if (auth_name == "insstek") {
+            $("#auth_department").css("display", "block");
+            $('input:checkbox[name="department_auth"]').each(function() {
+
+                var gubun_code = '@Model.department_auth';
+
+                var splitCode = gubun_code.split(',');
+
+
+                for (var idx in splitCode) {
+                    try {
+                        $("input[name=department_auth][value=" + splitCode[idx] + "]").attr("checked", true);
+
+                    } catch(e) {
+                        return;
+                    }
+                }
+            });
+        } else {
+            $("#auth_department").css("display", "none");
+        }
+
+    }
+
+</script>

@@ -1,0 +1,435 @@
+﻿@model SmartFactory.Models.user
+@{
+
+    string Mode = "i";
+
+
+    if (string.IsNullOrEmpty(Context.Request.Query["idx"]))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+    string company_idx_q = "1";
+
+    if (!string.IsNullOrEmpty(Context.Request.Query["company_idx_q"]))
+    {
+
+        company_idx_q = Context.Request.Query["company_idx_q"];
+    }
+
+
+}
+
+@{string language = Context.Request.Cookies["language"] ?? "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+}
+<script src="~/Content/Board/Board.js"></script>
+<div>
+    <partial name="setting_menu" />
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content">
+                    <form id="form1" name="form1" method="post" action="/sys/user_set_action">
+
+                        <input type="hidden" name="user_id_check" id="user_id_check" value="N" />
+                        <input type="hidden" name="idx" id="idx" value="@Context.Request.Query["idx"]" />
+                        <input id="user_auth" name="user_auth" type="hidden" value="@Model.user_auth" />
+                        <input id="check_auth" name="check_auth" type="hidden" value="@Model.check_auth" />
+                        <input id="select_checkit" name="select_checkit" type="hidden" value="" />
+                        <input id="main_bg_color" name="main_bg_color" type="hidden" value="@Model.main_bg_color" />
+                        <input id="language" name="language" type="hidden" value="@Model.language" />
+
+                        @Html.AntiForgeryToken()
+                        <div class="form-horizontal">
+                            <div class="sub_title_black">
+                                @SmartFactory.Util.get_word.language_code(language, "user") @SmartFactory.Util.get_word.language_code(language, "setting")
+                            </div>
+                            <hr />
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Company Select</label>
+
+                                    <div class="col-md-4">
+                                        @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, new { @class = "selectpicker", @onchange = "search_it()" })
+
+
+                                    </div>
+
+                                </div>
+
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Department Select</label>
+                                    <div class="col-md-4">
+
+                                        @Html.DropDownList("department_idx", (SelectList)ViewBag.부서,
+                                                           new { @class = "selectpicker" })
+
+
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                            <div class="auth_company">
+                                <fieldset>
+
+                                    @if (string.IsNullOrEmpty(Context.Request.Query["idx"]))
+                                    {
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">User Email</label>
+                                            <div class="col-md-2">
+
+                                                @Html.TextBoxFor(m => m.user_id, new { @class = "form-control", @required = "required", @maxlength = "30" })
+
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="btn btn-success btn-fill btn-wd" onclick="check_one() ">ID Search</div>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+
+                                        <input type="hidden" name="user_id" value="@Model.user_id" />
+                                    }
+
+
+                                </fieldset>
+                            </div>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">User Name</label>
+                                    <div class="col-md-2">
+                                        @Html.TextBoxFor(m => m.user_name, new { @class = "form-control", @required = "required", @maxlength = "30" })
+
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" red="tooltip" title="직책,직급,official responsibilities">Position</label>
+                                    <div class="col-md-2">
+
+
+                                        @Html.DropDownList("position_idx", (SelectList)ViewBag.직책,
+                                                           new { @class = "form-control" })
+
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">User Tel</label>
+                                    <div class="col-md-2">
+                                        @Html.TextBoxFor(m => m.user_tel, new { @class = "form-control", @required = "required", @maxlength = "30" })
+
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <div class="auth_company">
+
+
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Authority</label>
+
+                                        <div class="col-md-2">
+
+                                            @Html.DropDownList("position_idx", (SelectList)ViewBag.권한,
+                                                      new { @class = "form-control" })
+
+
+                                            @{int ii = 1;}
+                                            @foreach (var item in ViewBag.특수권한)
+                                            {
+                                                <div style="float:left;margin:5px;padding:0 3px">   <input id="send_check_@ii" name="send_check" type="checkbox" onclick="send_check_go2('@ii','@item.Value')" /> @item.Text</div>
+
+                                                <input id="send_check_Temp_@ii" name="send_check_Temp_@ii" type="hidden" value="0" />
+                                                ii++;
+
+                                            }
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+
+
+
+
+
+                            </div>
+
+
+
+                            <hr />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Use</label>
+                                <div class="col-md-2" style="padding-top: 7px" rel="tooltip" title="아이디 사용 여부 입니다.">
+                                    <input type="checkbox" id="use_yn" name="use_yn" checked data-toggle="switch" />
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="save_it() "> Save</div>
+                                    <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/sys/user_set_list') "> List</div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/Content/assets/js/alert.js"></script>
+
+<script type="text/javascript">
+
+      function send_check_go2(ii,v) {
+
+          if (v == "") {
+              v = 0;
+          }
+          if ($('input:checkbox[id="send_check_' + ii + '" ]').is(":checked") == true) {
+
+            $('#send_check_Temp_' + ii).attr("value", v);
+
+        } else {
+            $('#send_check_Temp_' + ii).attr("value", 0);
+        }
+
+        var user_auth_cnt = "@ViewBag.권한수";
+        if (user_auth_cnt == "") {
+            user_auth_cnt = 0;
+        }
+
+
+
+        var user_auth = "";
+
+        if (user_auth_cnt >0){
+        for (var i = 1; i <= user_auth_cnt; i++) {
+
+
+
+            if (i == 1) {
+                user_auth = $('#send_check_Temp_1').val();
+            }
+            else {
+                user_auth =  user_auth + "," + $('#send_check_Temp_' + i).val();
+            }
+          }
+            }
+
+        $('#user_auth').attr("value", user_auth);
+
+    }
+
+
+    $(document).ready(function() {
+
+
+        var department_id = "";
+        var mode = '@Mode';
+
+        //공개 여부 시작
+
+        var yn = "@Model.use_yn";
+        use_yn("use_yn", yn);
+
+
+
+        @{
+            if (Mode == "e") {
+
+                int iii = 1;
+                string senser_list = Model.user_auth;
+
+                try
+                {
+                    foreach (var item in senser_list.Split(','))
+                    {
+
+                        if (item == "0" || item == "")
+                        {
+                 <text>
+                    $("input:checkbox[id='send_check_" + @iii + "']").attr("checked", false);
+                    $("#send_check_Temp_"+@iii).attr("value","0");
+                </text>
+
+
+                        }
+                        else
+                        {
+               <text>
+                 $("input:checkbox[id='send_check_" + @iii + "']").attr("checked", true);
+                 $("#send_check_Temp_"+@iii).attr("value","@item");
+                </text>
+                        }
+
+                        iii++;
+                    }
+                }
+                catch { }
+            }
+                    }
+
+
+
+
+        if (mode == "e") {
+            //수정모드
+            department_id = '@Model.department_idx';
+            company_id = '@Model.company_idx';
+            $('#company_idx option[value=' + company_id + ']').attr('selected', 'selected');
+            $('#department_id option[value=' + department_id + ']').attr('selected', 'selected');
+            $("#user_id").attr("readonly", true);
+
+            var admin_auth = "@ViewBag.관리자";
+
+            if (admin_auth == "Y") {
+
+                $("#user_password").attr("value", "@Model.user_password");
+                $("#user_password2").attr("value", "@Model.user_password");
+            }
+
+
+
+        }
+        else {
+
+            var company_id_q = "@company_idx_q";
+             $('#company_idx option[value=' + company_id_q + ']').attr('selected', 'selected');
+
+
+
+        }
+
+
+
+
+
+    });
+
+    function use_yn(_id, yn) {
+
+        var _mode = "@Mode";
+
+        var use_yn = $("#" + _id).val();
+
+        if (_mode == "e") {
+
+            if (yn == "Y") {
+                $("#" + _id).attr("checked", true);
+            } else {
+                $("#" + _id).attr("checked", false);
+            }
+
+        }
+
+    }
+
+
+
+    function save_it() {
+
+
+
+        var _mode = '@Mode';
+
+
+
+            if (_mode == "i") {
+
+
+                if ($("#user_id_check").val() != "Y") {
+                    demo.showSwal('id-check');
+                    return;
+
+                }
+
+
+                check("user_id,user_name", "form1");
+            } else {
+
+                check("user_id,user_name", "form1");
+            }
+
+
+
+
+
+    }
+
+    function check_one() {
+
+
+        var doc = $("#user_id").val();
+
+        if (doc.length < 4) {
+
+            alert("Please enter more than four characters.");
+            return;
+        }
+
+
+
+        var URL = "/sys/user_set_check?doc_it=" + doc; // ContractManageMent
+
+        $.get(URL, function(data) {
+
+            $("#result").html(data);
+        });
+
+    }
+     function search_it() {
+        var company_idx = $("#company_idx").val();
+
+        location.href = "/sys/user_set?company_idx_q=" + company_idx;
+
+    }
+</script>
+<div id="result"></div>

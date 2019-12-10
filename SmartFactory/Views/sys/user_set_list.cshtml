@@ -1,0 +1,179 @@
+﻿@using SmartFactory.Models
+@model IEnumerable<SmartFactory.Models.user>
+
+@{string language = Context.Request.Cookies["language"] ?? "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+}
+
+
+
+
+<script>
+
+    function search_it() {
+        var search_all = $("#search_all").val();
+
+        $("#form1").submit();
+
+    }
+
+
+</script>
+
+<div>
+
+    <partial name="setting_menu" />
+
+</div>
+<div class="container  sub_page">
+
+    <div class="sub_title_black">
+        @SmartFactory.Util.get_word.language_code(language, "user") @SmartFactory.Util.get_word.language_code(language, "setting")
+    </div>
+    <hr />
+    <form id="form1" name="form1" action="/sys/user_set_list" method="post">
+
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Search</th>
+                    <td>
+                        <input type="text" name="search_all" id="search_all" value="@ViewBag.search_all" class="form-control" />
+
+                    </td>
+                    <td colspan="5" style="text-align:left">
+                        <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="search_it() "> Search</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        @{order_name("company name", "company_name"); }
+                    </th>
+                    <th style="text-align:left;">
+                        @{order_name("user id", "user_id"); }
+
+                    </th>
+
+                    <th style="text-align:left">
+
+                        @{order_name("user name", "user_name"); }
+                    </th>
+                    <th style="text-align:left">
+                        @{order_name("user department", "department_name"); }
+                    </th>
+                    <th>
+                        Use
+                    </th>
+                    <th>
+                        @{order_name("Date", "write_date"); }
+
+
+                    <th class="check_auth">
+                        Edit
+                    </th>
+
+
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (user item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a href="/sys/user_set/?company_idx=@item.company_idx&idx=@item.idx" style="font-weight: bold">  @Html.DisplayFor(modelItem => item.company_idxNavigation.company_name) </a>
+                        </td>
+                        <td style="text-align:left;">
+                            @Html.DisplayFor(modelItem => item.user_id)
+                        </td>
+
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.user_name)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.department_idxNavigation.department_name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.use_yn)
+                        </td>
+
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.write_date)
+                        </td>
+
+
+
+                        <td class="check_auth">
+                            <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                <a href="/sys/user_set?idx=@item.idx"> <img src="~/images/common/s_edit_icon.gif" /></a>
+                            </span>
+                            <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                                <img src="~/images/common/s_icon_del.gif" onclick="del_it('/sys/user_set_action?idx=@item.idx') " />
+
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <fieldset>
+            <div class="form-group check_auth">
+                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('user_set') ">
+
+                        @SmartFactory.Util.get_word.language_code(language, "create")
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+@functions{
+
+    public void order_name(string _name, string _target)
+    {
+
+        string now_page = Context.Request.Path;
+
+        <text>
+            <a href="@now_page?target='@_target'&order='@ViewBag.정렬'">
+                @_name @if (ViewBag.정렬 == "desc" && ViewBag.대상 == _target)
+                {
+                    <span>▼</span>
+                }
+                else
+                {
+                    <span>▲</span>
+                }
+            </a>
+        </text>
+
+
+    }
+
+    public void get_comany_type(int _code)
+    {
+
+        db_e db = new db_e();
+
+        var _name = (from a in db.code_company where a.code_id == _code select a.code_name).FirstOrDefault() ?? "";
+        <span>@_name</span>
+    }
+}
+
+

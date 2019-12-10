@@ -1,0 +1,170 @@
+﻿@using SmartFactory.Models
+@{
+
+
+    // 선택된 메뉴 스타일 ========================================================
+
+
+
+    string mode_type = Context.Request.Query["mode"];
+
+
+
+
+
+}
+
+<div class="sidebar" data-color="@{bg_get(User.Identity.Name);}" data-image="/images/sample.jpg">
+    <div class="logo" style="height:59px;">
+        <a href="/home/index">
+
+            <div class="simple-text" style="padding:0">GoodDesign</div>
+            <div style="font-size:11px;color:#dbdbdb;text-align:center ">SMARTFACTORY </div>
+        </a>
+    </div>
+    <div class="logo logo-mini">
+        <a href="/">
+            <div class="simple-text" style="font-size: 0.9em">MENU</div>
+        </a>
+    </div>
+    <div class="sidebar-wrapper">
+        @{get_class();}
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+
+    function logout() {
+
+        $("#form_login").submit();
+    }
+
+
+</script>
+
+@functions {
+ 
+
+    public void bg_get(string user_id)
+    {
+        string bg_style = "azure";
+         var db = new db_e();
+        
+        bg_style = (from a in db.user where a.user_id == user_id select a.main_bg_color).FirstOrDefault();
+
+
+        <text>@bg_style</text>
+
+    }
+
+    public void get_class()
+    {
+        string urlcheck = Context.Request.Path;
+        string page_name = "";
+
+        try
+        {
+            page_name = urlcheck.Split('/')[2];
+        }
+        catch
+        {
+            page_name = "";
+        }
+
+        var db = new db_e();
+        string web_user_id = User.Identity.Name ?? "";
+
+
+
+
+        string user_auth = (from a in db.user where a.user_id == web_user_id select a.department_idxNavigation.department_auth).FirstOrDefault() ?? "";
+
+
+        List<CategoryMenus>
+        data = (from a in db.CategoryMenus
+                where user_auth.Contains(a.step_auth)
+                select a).OrderBy(o => o.step_orderby).ToList();
+
+        string nav_class = "";
+
+
+        <ul class="nav">
+
+            @foreach (CategoryMenus item in data)
+            {
+                if (item.step_url2 == page_name)
+                {
+                    nav_class = "active";
+                }
+                else
+                {
+                    nav_class = "";
+                }
+
+
+                if (item.step_dept == 1)
+                {
+                    <li class="@nav_class loading">
+                        <a href="/@item.step_url1/@item.step_url2">
+                            <i class="@item.step_icon"></i>
+                            <p>@item.step_name   </p>
+
+                        </a>
+                    </li>
+                }
+                if (item.step_dept == 2)
+                {
+                    string h_id = item.step_url1 + item.step_url2;
+                    <li>
+
+                        <a data-toggle="collapse" href="#@item.step_url1@item.step_url2">
+
+                            <i class="@item.step_icon"></i>
+                            <p>
+                                @item.step_name
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        @{sub_page(item.step_index, h_id);}
+
+                    </li>
+                }
+            }
+
+
+
+        </ul>
+    }
+
+
+
+    public void sub_page(string step_index, string h_id)
+    {
+        var db = new db_e();
+
+
+        List<CategoryMenus>
+            list = (from a in db.CategoryMenus where a.step_index == step_index && a.step_dept == 3 select a).OrderBy(o => o.step_orderby).ToList();
+
+        <div class="collapse" id="@h_id">
+            <ul class="nav">
+
+                @foreach (CategoryMenus item in list)
+                {
+                    <li>
+                        <a href="/@item.step_url1/@item.step_url2" class="loading">
+                            <i class="@item.step_icon"></i>
+                            <p>@item.step_name</p>
+                        </a>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    }
+}
+
+

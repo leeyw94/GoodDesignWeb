@@ -1,0 +1,250 @@
+﻿@model SmartFactory.Models.user
+@{
+    string language = "korea";
+    string main_bg_color = "azure";
+
+    string Mode = "i";
+    if (string.IsNullOrEmpty(Context.Request.Query["idx"]))
+    {
+        Mode = "i";
+
+     try {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    } catch {
+
+
+    }
+
+       
+
+    }
+    else
+    {
+        Mode = "e";
+        language = Model.language;
+        main_bg_color = Model.main_bg_color;
+
+    }
+   
+  
+
+
+
+
+
+}
+<style>
+    .table th {
+        text-align: center
+    }
+
+    .table td {
+        text-align: left !important;
+        text-indent: 15px;
+        font-size: 1.0em !important;
+    }
+
+    .radio_bg {
+        margin-right: 20px;
+    }
+</style>
+<script src="~/Content/Board/Board.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content">
+
+
+                    <form id="form3" name="form1" method="post" action="~/sys/userinfo_action">
+
+
+                        <input type="hidden" name="main_bg_color" id="main_bg_color" value="@Model.main_bg_color" />
+
+                        <div class="form-horizontal">
+                            <h4><span class="sub_title_black">사용자 기본 설정</span></h4>
+
+
+                            <table class="tbl_azure">
+
+                                <tr>
+                                    <th style="width:100px;">@SmartFactory.Util.get_word.language_code(language, "id")</th>
+                                    <td>@User.Identity.Name  </td>
+                                    <th style="width:120px;">@SmartFactory.Util.get_word.language_code(language, "name")</th>
+                                    <td>@Model.user_name</td>
+                                </tr>
+                                <tr>
+                                    <th> @SmartFactory.Util.get_word.language_code(language, "email")</th>
+                                    <td>
+                                        <div class="col-md-12">
+                                            @Html.TextBoxFor(m => m.user_email, new { @class = "form-control", @required = "required", @maxlength = "30" })
+                                        </div>
+                                    </td>
+
+                                    <th>
+                                        @SmartFactory.Util.get_word.language_code(language, "tel")
+                                    </th>
+                                    <td>
+                                        <div class="col-md-">
+                                            @Html.TextBoxFor(m => m.user_tel, new { @class = "form-control", @required = "required", @maxlength = "30" })
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+
+
+                                <tr>
+                                    <th>@SmartFactory.Util.get_word.language_code(language, "backgroundcolor")</th>
+                                    <td>
+                                        <span class="radio_bg" style="color:#808080 "> <input type="radio" name="main_bg_color_temp" value="x" onclick="set_bg('x')" /> basic         </span>
+                                        <span class="radio_bg" style="color:red "> <input type="radio" name="main_bg_color_temp" value="red" onclick="set_bg('red')" /> red         </span>
+                                        <span class="radio_bg" style="color:blue"><input type="radio" name="main_bg_color_temp" value="blue" onclick="set_bg('blue')" /> blue     </span>
+                                        <span class="radio_bg" style="color:#23ccef"><input type="radio" name="main_bg_color_temp" value="azure" onclick="set_bg('azure')" /> azure    </span>
+                                        <span class="radio_bg" style="color:green"><input type="radio" name="main_bg_color_temp" value="green" onclick="set_bg('green')" /> green    </span>
+                                        <span class="radio_bg" style="color:orange"><input type="radio" name="main_bg_color_temp" value="orange" onclick="set_bg('orange')" /> orange   </span>
+                                        <span class="radio_bg" style="color:purple"><input type="radio" name="main_bg_color_temp" value="purple" onclick="set_bg('purple')" /> purple   </span>
+
+                                    </td>
+
+                                    <th>@SmartFactory.Util.get_word.language_code(language, "language")</th>
+                                    <td style="padding:10px">
+
+                                        @Html.DropDownList("language", (SelectList)ViewBag.언어, "-- ▼ Option --", new { @class = "form-control", @style = "max-width=200px" })
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="saveit() "> Save</div>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/Content/assets/js/alert.js"></script>
+
+<script type="text/javascript">
+
+
+
+    $(document).ready(function() {
+
+
+
+        @{
+          
+            int iii = 1;
+            string senser_list = Model.user_auth;
+
+
+            try
+            {
+                foreach (var item in senser_list.Split(','))
+                {
+
+                    if (item == "0" || item == "")
+                    {
+                 <text>
+                    $("input:checkbox[id='send_check_" + @iii + "']").attr("checked", false);
+                    $("#send_check_Temp_"+@iii).attr("value","0");
+                </text>
+
+
+                        }
+                    else
+                    {
+               <text>
+                    $("input:checkbox[id='send_check_" + @iii + "']").attr("checked", true);
+
+                    $("#send_check_Temp_" +@iii).attr("value", "@item");
+
+
+                </text>
+                        }
+
+                    iii++;
+                }
+            }
+            catch { }
+
+           }
+
+
+                $("#main_bg_color").attr("value", "@main_bg_color");
+                $("#user_password").attr("value", "@Model.user_password");
+                $("#user_password2").attr("value", "@Model.user_password");
+                $('#language option[value=' + "@language" + ']').attr('selected', 'selected');
+
+                var main_bg_color = "@main_bg_color";
+
+                if (main_bg_color == "") {
+
+                    main_bg_color = "red";
+                }
+
+                $("#main_bg_color").attr("value", main_bg_color);
+
+
+                $('input:radio[name=main_bg_color_temp]:input[value=' + main_bg_color + ']').attr("checked", true);
+
+
+
+    });
+
+
+
+
+    function saveit() {
+
+
+
+
+          check("user_id,user_name", "form3");
+
+
+
+    }
+    function set_bg(bg) {
+
+        $("#main_bg_color").attr("value", bg);
+
+
+
+
+    }
+
+
+</script>
+<div id="result"></div>

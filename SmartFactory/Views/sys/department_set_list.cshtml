@@ -1,0 +1,136 @@
+﻿@using SmartFactory.Models
+@model IEnumerable<SmartFactory.Models.department>
+@{string language = Context.Request.Cookies["language"] ?? "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+}
+
+
+
+
+<div>
+    <partial name="setting_menu" />
+
+</div>
+
+
+<div class="container  sub_page">
+
+    <div class="sub_title_black">
+        @SmartFactory.Util.get_word.language_code(language, "department") @SmartFactory.Util.get_word.language_code(language, "setting")
+    </div>
+    <hr />
+    <div class="content check_auth">
+
+        <div class="col-md-2" style="float: right; padding-bottom: 15px;">
+            @Html.DropDownList("companyidx", (SelectList)ViewBag.회사, "회사선택", new { @class = "form-control", @data_style = "btn-info btn-fill btn-block", @onchange = "search()" })
+
+        </div>
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Company name
+                </th>
+                <th>
+                    Department name
+                </th>
+
+                <th>
+                    Date
+                </th>
+                <th>
+                    Use
+                </th>
+                <th>
+                    Company name
+                </th>
+                <th class="check_auth">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (department item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/sys/department_set/?idx=@item.idx" style="font-weight: bold">@Html.DisplayFor(modelItem => item.company_idxNavigation.company_name)</a>
+                    </td>
+                    <td>
+                        <a href="/sys/department_set/?idx=@item.idx" style="font-weight: bold">@Html.DisplayFor(modelItem => item.department_name)</a>
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.write_date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.use_yn)
+                    </td>
+                    <td>
+                    </td>
+                    <td class="check_auth">
+
+
+                        <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                            <a href="/sys/department_set?idx=@item.idx"> <img src="~/images/common/s_edit_icon.gif" /></a>
+                        </span>
+                        <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                            <a href="/sys/company_set/?idx=@item.idx"></a>
+                        </span>
+
+
+
+
+                        <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                            <img src="~/images/common/s_icon_del.gif" onclick="del_it('/sys/department_set_action?idx=@item.idx') " />
+
+                        </span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <fieldset>
+        <div class="form-group check_auth">
+            <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('department_set') ">
+
+                    @SmartFactory.Util.get_word.language_code(language, "create")
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<script type="text/javascript">
+
+    $().ready(function () {
+
+        //  $('#company_id option[value=' + company_id + ']').attr('selected', 'selected');
+
+
+    });
+
+    function search() {
+
+        var company_id = $("#companyidx").find("option:selected").val();
+
+
+
+        location.href = "/sys/department_set_list?companyidx=" + company_id;
+    }
+
+</script>
