@@ -16,6 +16,8 @@ namespace SmartFactory.Models
         [Column(TypeName = "datetime")]
         public DateTime writeDate { get; set; }
         public int code_sample_idx { get; set; }
+        [StringLength(4)]
+        public string use_yn { get; set; }
 
         [ForeignKey(nameof(code_sample_idx))]
         [InverseProperty(nameof(code_sample.sample))]

@@ -10,6 +10,7 @@ namespace SmartFactory.Models
         public company()
         {
             BoardMenu = new HashSet<BoardMenu>();
+            calendar = new HashSet<calendar>();
             code_position = new HashSet<code_position>();
             department = new HashSet<department>();
             user = new HashSet<user>();
@@ -50,6 +51,8 @@ namespace SmartFactory.Models
         public virtual code_company gubun_idxNavigation { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<BoardMenu> BoardMenu { get; set; }
+        [InverseProperty("company_idxNavigation")]
+        public virtual ICollection<calendar> calendar { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<code_position> code_position { get; set; }
         [InverseProperty("company_idxNavigation")]

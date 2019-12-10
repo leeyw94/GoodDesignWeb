@@ -1,0 +1,356 @@
+﻿@model SmartFactory.Models.calendar
+
+@{
+    string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+    string idx = Context.Request.Query["idx"];
+    string open = Context.Request.Query["open"];
+    string mode = Context.Request.Query["mode"];
+    string Mode = "i";
+
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+
+
+    string mode_type = Context.Request.Query["mode"];
+    if (string.IsNullOrEmpty(mode_type))
+    {
+        mode_type = "W";
+    }
+
+
+}
+
+
+
+<script src="~/Content/assets/js/moment.min.js"></script>
+<script src="~/Content/assets/js/bootstrap-datetimepicker2.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+                var company_idx = "@ViewBag.company_idx";
+                var department_idx = "@ViewBag.department_idx";
+                var code_work_idx = "@Model.code_work_idx";
+                var project_idx = "@Model.project_idx";
+                var code_index_idx = "@Model.code_index_idx";
+
+
+                if (code_index_idx == "") {
+                    code_index_idx = 1;
+                }
+
+
+                var mode = '@Mode';
+
+
+
+                var open_it = '@Model.open_it';
+           if (mode == "e") {
+                    department_idx = '@Model.department_idx';
+                    company_idx = '@Model.company_idx';
+            $('#company_idx option[value=' + company_id + ']').attr('selected', 'selected');
+            $('#department_idx option[value=' + department_id + ']').attr('selected', 'selected');
+            $('#code_work_idx option[value=' + code_work_idx + ']').attr('selected', 'selected');
+            $('#project_idx option[value=' + project_idx + ']').attr('selected', 'selected');
+            $('#code_index_idx option[value=' + code_index_idx + ']').attr('selected', 'selected');
+
+
+                    if (open_it == "Y") {
+                $('#open_it').attr("checked", true);
+                    } else {
+                $('#open_it').attr("checked", false);
+                    }
+
+
+                } else {
+                    //등록모드
+            var project_idx = "@open";
+            $('#start_date').val('@ViewBag.start_date');
+            $('#end_date').val('@ViewBag.end_date');
+            $('#project_idx').val(project_idx);
+            $('#company_idx option[value=' + company_idx + ']').attr('selected', 'selected');
+            $('#department_idx option[value=' + department_idx + ']').attr('selected', 'selected');
+
+            $(".btn_remove").css("display", "none");
+
+                }
+
+
+                if (project_idx == "200") {
+            $('#open_it').attr('checked', 'checked');
+
+                }
+
+
+        $('#form1').validate();
+
+
+            });
+
+    function save_it() {
+
+                var startDate1 = $("#start_date").val().substring(0, 10);
+                var startDate2 = $("#start_date").val().substring(11, 13);
+                var startDate3 = $("#start_date").val().substring(14, 16);
+
+
+                var endDate1 = $("#end_date").val().substring(0, 10);
+                var endDate2 = $("#end_date").val().substring(11, 13);
+                var endDate3 = $("#end_date").val().substring(14, 16);
+
+
+                var startDate   = startDate1.split("-");
+                var endDate     = endDate1.split("-");
+
+
+
+                var day1 = new Date(startDate[0], startDate[1], startDate[2], startDate2,  startDate3).valueOf();
+
+                var day2 = new Date(endDate[0], endDate[1], endDate[2], endDate2, endDate3).valueOf();
+
+
+
+                if (day1 > day2) {
+
+                    alert("시작일이 종료일보다 큽니다. 다시 선택해 주세요.");
+                    return;
+
+                }
+                else {
+                    check("title,start_date,end_date", "form1");
+
+                }
+
+
+
+
+            }
+            function check_day(){
+
+                var startDate1 = $("#start_date").val().substring(0, 10);
+                var startDate2 = $("#start_date").val().substring(11, 13);
+                var startDate3 = $("#start_date").val().substring(14, 16);
+
+
+                var endDate1 = $("#end_date").val().substring(0, 10);
+                var endDate2 = $("#end_date").val().substring(11, 13);
+                var endDate3 = $("#end_date").val().substring(14, 16);
+
+
+                var startDate = startDate1.split("-");
+                var endDate = endDate1.split("-");
+
+
+
+                var day1 = new Date(startDate[0], startDate[1], startDate[2], startDate2, startDate3).valueOf();
+
+                var day2 = new Date(endDate[0], endDate[1], endDate[2], endDate2, endDate3).valueOf();
+
+                if (day1 > day2) {
+
+                    alert("시작일이 종료일보다 큽니다. 다시 선택해 주세요.");
+                    return;
+
+                }
+            }
+
+            function del_one() {
+                var mode = '@Mode';
+
+                var project_idx = "@Model.project_idx";
+
+                if (mode == "e") {
+                    var idx = "@idx";
+                    location.href = "/calendar/DelCal?idx=" + idx + "&open=" + project_idx;
+
+                }
+
+
+            }
+
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content">
+
+
+                    <form id="form1" name="form1" method="post" action="/calendar/calendar_action" enctype="multipart/form-data">
+
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="mode" id="mode" value="@mode" />
+                        <div class="form-horizontal">
+                            <h4><span class="sub_title">Create</span></h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <input type="hidden" name="idx" id="idx" value="@idx" />
+                            @*부서별 캘리더 구분 U*@
+                            <input type="hidden" name="gubun_type" id="gubun_type=" value="U" />
+                            <input type="hidden" name="use_yn" id="use_yn" value="@Model.use_yn" />
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-target="#collapseOne" href="#" data-toggle="collapse">
+                                                Basic
+
+                                                <b class="caret"></b>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse ">
+
+
+
+                                        <div class="form-group">
+
+                                            <label class="col-sm-2 control-label">Title</label>
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Date and Time</label>
+                                            <div class="col-md-2">
+
+                                                <input type="text" name="start_date" id="start_date" class="form-control datetimepicker" value="@Model.start_date.ToShortDateString()" />
+                                            </div>
+                                            <div class="col-xs-2" style="width: 30px;"> ~</div>
+                                            <div class="col-md-2">
+
+                                                <input type="text" name="end_date" id="end_date" class="form-control datetimepicker" value="@Model.end_date.ToShortDateString()" />
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Memo</label>
+                                            <div class="col-md-10">
+
+                                                <textarea rows="5" id="content" name="content" class="form-control" placeholder="Here can be your description">@Model.content</textarea>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-target="#collapseTwo" href="#" data-toggle="collapse">
+                                                More
+
+                                                <b class="caret"></b>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Department</label>
+
+                                            <div class="col-md-4">
+
+                                                @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, new { @class = "selectpicker" })
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">State</label>
+                                            <div class="col-md-2" rel="tooltip" title="일정 진행 상황입니다.">
+                                                @Html.DropDownList("code_work_idx", (SelectList)ViewBag.작업상태, new { @class = "selectpicker" })
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Project</label>
+                                            <div class="col-md-4">
+                                                @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "None", new { @class = "selectpicker" })
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Index</label>
+                                            <div class="col-md-4" rel="tooltip" title="중요 일정 지정입니다.">
+                                                @Html.DropDownList("code_index_idx", (SelectList)ViewBag.색인, new { @class = "selectpicker" })
+
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">All open</label>
+                                            <div class="col-md-2" style="padding-top: 7px" title="전체 부서 공유여부입니다. NO를 선택시에는 해당 부서만 공유하실 수 있습니다." rel="tooltip">
+                                                <input type="checkbox" id="open_it" name="open_it" data-toggle="switch" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <fieldset>
+                                <div class="form-group check_auth">
+                                    <div class="col-md-12" style="display: table; margin: 10px; text-align: center;">
+                                        <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">Save</div>
+
+                                        <div class="btn btn-default btn-fill btn-wd   btn-danger btn_remove" onclick=" del_one() ">Remove</div>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+
+                        </div>
+                    </form>
+
+                    <div>
+                        @Html.ActionLink("View Calendar ", "calendar_view", new { open })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $().ready(function () {
+
+        // Init Sliders
+        demo.initFormExtendedSliders();
+
+        // Init DatetimePicker
+        demo.initFormExtendedDatetimepickers();
+    });
+</script>

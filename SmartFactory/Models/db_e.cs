@@ -35,18 +35,21 @@ namespace SmartFactory.Models
         public virtual DbSet<Process> Process { get; set; }
         public virtual DbSet<QA> QA { get; set; }
         public virtual DbSet<cal_memo> cal_memo { get; set; }
+        public virtual DbSet<calendar> calendar { get; set; }
         public virtual DbSet<code_1> code_1 { get; set; }
         public virtual DbSet<code_auth> code_auth { get; set; }
         public virtual DbSet<code_auth_ex> code_auth_ex { get; set; }
         public virtual DbSet<code_company> code_company { get; set; }
         public virtual DbSet<code_gubun> code_gubun { get; set; }
         public virtual DbSet<code_index> code_index { get; set; }
+        public virtual DbSet<code_machine_spec> code_machine_spec { get; set; }
         public virtual DbSet<code_main> code_main { get; set; }
         public virtual DbSet<code_nationality> code_nationality { get; set; }
         public virtual DbSet<code_position> code_position { get; set; }
         public virtual DbSet<code_project_state> code_project_state { get; set; }
         public virtual DbSet<code_sample> code_sample { get; set; }
         public virtual DbSet<code_time> code_time { get; set; }
+        public virtual DbSet<code_work_state> code_work_state { get; set; }
         public virtual DbSet<company> company { get; set; }
         public virtual DbSet<department> department { get; set; }
         public virtual DbSet<event_list> event_list { get; set; }
@@ -70,7 +73,6 @@ namespace SmartFactory.Models
         public virtual DbSet<user_mail> user_mail { get; set; }
         public virtual DbSet<v_mywork_project> v_mywork_project { get; set; }
         public virtual DbSet<v_new_work> v_new_work { get; set; }
-        public virtual DbSet<work_list> work_list { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -183,7 +185,9 @@ namespace SmartFactory.Models
             {
                 entity.Property(e => e.ImagePath).IsUnicode(false);
 
-                entity.Property(e => e.Md_id).IsUnicode(false);
+                entity.Property(e => e.Md_id)
+                    .IsUnicode(false)
+                    .HasComment("파일 고유 키");
 
                 entity.Property(e => e.fileName).IsUnicode(false);
 
@@ -419,6 +423,86 @@ namespace SmartFactory.Models
                     .HasConstraintName("FK_cal_memo_cal_user");
             });
 
+            modelBuilder.Entity<calendar>(entity =>
+            {
+                entity.HasKey(e => e.idx)
+                    .HasName("PK_work_list");
+
+                entity.Property(e => e.code_work_idx)
+                    .HasDefaultValueSql("((1))")
+                    .HasComment("작업 상태");
+
+                entity.Property(e => e.content).HasComment("비고");
+
+                entity.Property(e => e.edit_date).HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.end_date).HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.fileId)
+                    .IsUnicode(false)
+                    .HasComment("첨부파일 아이디");
+
+                entity.Property(e => e.gubun_type)
+                    .IsUnicode(false)
+                    .HasComment("프로젝트 코드");
+
+                entity.Property(e => e.open_it)
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('Y')");
+
+                entity.Property(e => e.project_idx).HasComment("프로젝트 고유코드");
+
+                entity.Property(e => e.start_date).HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.title).IsUnicode(false);
+
+                entity.Property(e => e.use_yn)
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('Y')")
+                    .HasComment("사용여부");
+
+                entity.Property(e => e.user_id).IsUnicode(false);
+
+                entity.Property(e => e.who)
+                    .IsUnicode(false)
+                    .HasComment("참여인력");
+
+                entity.Property(e => e.who_list).IsUnicode(false);
+
+                entity.Property(e => e.work_hour).HasComment("작업시간");
+
+                entity.Property(e => e.write_date).HasDefaultValueSql("(getdate())");
+
+                entity.HasOne(d => d.code_index_idxNavigation)
+                    .WithMany(p => p.calendar)
+                    .HasForeignKey(d => d.code_index_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_work_list_code_work_state");
+
+                entity.HasOne(d => d.company_idxNavigation)
+                    .WithMany(p => p.calendar)
+                    .HasForeignKey(d => d.company_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_work_list_company");
+
+                entity.HasOne(d => d.department_idxNavigation)
+                    .WithMany(p => p.calendar)
+                    .HasForeignKey(d => d.department_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_work_list_department");
+
+                entity.HasOne(d => d.project_idxNavigation)
+                    .WithMany(p => p.calendar)
+                    .HasForeignKey(d => d.project_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_work_list_project_main");
+
+                entity.HasOne(d => d.user_)
+                    .WithMany(p => p.calendar)
+                    .HasForeignKey(d => d.user_id)
+                    .HasConstraintName("FK_work_list_user");
+            });
+
             modelBuilder.Entity<code_1>(entity =>
             {
                 entity.HasKey(e => e.idx)
@@ -490,6 +574,21 @@ namespace SmartFactory.Models
             modelBuilder.Entity<code_index>(entity =>
             {
                 entity.Property(e => e.code_name).IsUnicode(false);
+
+                entity.Property(e => e.gubun).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+            });
+
+            modelBuilder.Entity<code_machine_spec>(entity =>
+            {
+                entity.Property(e => e.code_name)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.code_name_en)
+                    .IsUnicode(false)
+                    .HasComment("중류");
 
                 entity.Property(e => e.gubun).IsUnicode(false);
 
@@ -587,6 +686,21 @@ namespace SmartFactory.Models
                 entity.Property(e => e.use_yn).IsUnicode(false);
             });
 
+            modelBuilder.Entity<code_work_state>(entity =>
+            {
+                entity.Property(e => e.code_name)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.code_name_en)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.gubun).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+            });
+
             modelBuilder.Entity<company>(entity =>
             {
                 entity.HasKey(e => e.idx)
@@ -637,8 +751,6 @@ namespace SmartFactory.Models
             {
                 entity.HasKey(e => e.idx)
                     .HasName("PK_department_1");
-
-                entity.Property(e => e.idx).ValueGeneratedNever();
 
                 entity.Property(e => e.company_idx).HasComment(" 회사 아이디");
 
@@ -879,19 +991,19 @@ namespace SmartFactory.Models
 
             modelBuilder.Entity<machine>(entity =>
             {
-                entity.Property(e => e.machine_id).IsUnicode(false);
+                entity.Property(e => e.company_idx).HasComment("회사코드");
 
-                entity.Property(e => e.company_id).IsUnicode(false);
-
-                entity.Property(e => e.idx).ValueGeneratedOnAdd();
-
-                entity.Property(e => e.machine_name).IsUnicode(false);
+                entity.Property(e => e.mName).IsUnicode(false);
 
                 entity.Property(e => e.use_yn).IsUnicode(false);
 
-                entity.Property(e => e.write_date).HasDefaultValueSql("(getdate())");
+                entity.Property(e => e.writeDate).HasDefaultValueSql("(getdate())");
 
-                entity.Property(e => e.writer_id).IsUnicode(false);
+                entity.HasOne(d => d.code_machine_spec_idxNavigation)
+                    .WithMany(p => p.machine)
+                    .HasForeignKey(d => d.code_machine_spec_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_machine_code_machine_spec");
             });
 
             modelBuilder.Entity<member>(entity =>
@@ -1084,17 +1196,13 @@ namespace SmartFactory.Models
 
             modelBuilder.Entity<project_main>(entity =>
             {
-                entity.Property(e => e.company_id).IsUnicode(false);
-
-                entity.Property(e => e.department_id).IsUnicode(false);
-
-                entity.Property(e => e.end_date).HasComment("종료일");
+                entity.Property(e => e.end_date)
+                    .HasDefaultValueSql("(getdate())")
+                    .HasComment("종료일");
 
                 entity.Property(e => e.file_sn).IsUnicode(false);
 
                 entity.Property(e => e.index_order).HasDefaultValueSql("((9))");
-
-                entity.Property(e => e.machine_id).IsUnicode(false);
 
                 entity.Property(e => e.memo).IsUnicode(false);
 
@@ -1104,15 +1212,13 @@ namespace SmartFactory.Models
 
                 entity.Property(e => e.owner_id).IsUnicode(false);
 
-                entity.Property(e => e.project_code)
-                    .IsUnicode(false)
-                    .HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.project_name)
                     .IsUnicode(false)
                     .HasComment("프로젝트 이름");
 
-                entity.Property(e => e.start_date).HasComment("시작일");
+                entity.Property(e => e.start_date)
+                    .HasDefaultValueSql("(getdate())")
+                    .HasComment("시작일");
 
                 entity.Property(e => e.state)
                     .HasDefaultValueSql("((1))")
@@ -1121,8 +1227,6 @@ namespace SmartFactory.Models
                 entity.Property(e => e.use_yn)
                     .IsUnicode(false)
                     .HasDefaultValueSql("('Y')");
-
-                entity.Property(e => e.user_ip).IsUnicode(false);
 
                 entity.Property(e => e.write_date).HasDefaultValueSql("(getdate())");
 
@@ -1155,6 +1259,8 @@ namespace SmartFactory.Models
             modelBuilder.Entity<sample>(entity =>
             {
                 entity.Property(e => e.title).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
 
                 entity.Property(e => e.userName).IsUnicode(false);
 
@@ -1267,72 +1373,6 @@ namespace SmartFactory.Models
                 entity.ToView("v_new_work");
 
                 entity.Property(e => e.project_name).IsUnicode(false);
-            });
-
-            modelBuilder.Entity<work_list>(entity =>
-            {
-                entity.Property(e => e.company_id).IsUnicode(false);
-
-                entity.Property(e => e.content).HasComment("비고");
-
-                entity.Property(e => e.department_id).IsUnicode(false);
-
-                entity.Property(e => e.edit_date).HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.gubun_code).HasComment("작업시간");
-
-                entity.Property(e => e.gubun_type)
-                    .IsUnicode(false)
-                    .HasComment("프로젝트 코드");
-
-                entity.Property(e => e.open_it)
-                    .IsUnicode(false)
-                    .HasDefaultValueSql("('Y')");
-
-                entity.Property(e => e.project_idx).HasComment("프로젝트 고유코드");
-
-                entity.Property(e => e.state)
-                    .HasDefaultValueSql("((1))")
-                    .HasComment("작업 상태");
-
-                entity.Property(e => e.title).IsUnicode(false);
-
-                entity.Property(e => e.use_yn)
-                    .IsUnicode(false)
-                    .HasDefaultValueSql("('Y')")
-                    .HasComment("업무 분류");
-
-                entity.Property(e => e.user_id).IsUnicode(false);
-
-                entity.Property(e => e.who)
-                    .IsUnicode(false)
-                    .HasComment("참여인력");
-
-                entity.Property(e => e.who_list).IsUnicode(false);
-
-                entity.Property(e => e.write_date).HasDefaultValueSql("(getdate())");
-
-                entity.HasOne(d => d.indexNavigation)
-                    .WithMany(p => p.work_list)
-                    .HasForeignKey(d => d.index)
-                    .HasConstraintName("FK_work_list_code_index1");
-
-                entity.HasOne(d => d.project_idxNavigation)
-                    .WithMany(p => p.work_list)
-                    .HasForeignKey(d => d.project_idx)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_work_list_project_main");
-
-                entity.HasOne(d => d.stateNavigation)
-                    .WithMany(p => p.work_list)
-                    .HasForeignKey(d => d.state)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_work_list_code_project_state");
-
-                entity.HasOne(d => d.user_)
-                    .WithMany(p => p.work_list)
-                    .HasForeignKey(d => d.user_id)
-                    .HasConstraintName("FK_work_list_user");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -7,11 +7,6 @@ namespace SmartFactory.Models
 {
     public partial class code_project_state
     {
-        public code_project_state()
-        {
-            work_list = new HashSet<work_list>();
-        }
-
         [Key]
         public int code_id { get; set; }
         [Required]
@@ -23,8 +18,5 @@ namespace SmartFactory.Models
         public int index_order { get; set; }
         [StringLength(1)]
         public string gubun { get; set; }
-
-        [InverseProperty("stateNavigation")]
-        public virtual ICollection<work_list> work_list { get; set; }
     }
 }

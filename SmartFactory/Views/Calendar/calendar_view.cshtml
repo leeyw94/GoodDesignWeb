@@ -1,0 +1,600 @@
+﻿@using SmartFactory.Models
+@model SmartFactory.Models.calendar
+
+
+@{
+    string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+    string language_code = "ko";
+
+    if(language != "korea")
+    {
+        language_code = "en";
+
+    }
+
+
+
+  
+    string month = DateTime.Now.Month.ToString();
+    string idx = Context.Request.Query["idx"];
+    string open = Context.Request.Query["open"];
+
+  
+    string start_date = "";
+    string end_date = "";
+
+
+    if (!string.IsNullOrEmpty(Context.Request.Query["open"]))
+    {
+        start_date = ViewBag.시작일;
+        end_date = ViewBag.마감일;
+        open = Context.Request.Query["open"];
+    }
+
+
+}
+
+
+<link href="~/Content/fullcalendar-3.2.0/fullcalendar.css" rel="stylesheet" />
+<script src="~/Content/fullcalendar-3.2.0/lib/moment.min.js"></script>
+<script src="~/Content/fullcalendar-3.2.0/fullcalendar.js"></script>
+<script src="~/Content/fullcalendar-3.2.0/locale-all.js"></script>
+<link href="~/Content/MediaQuery.css" rel="stylesheet" />
+<script src="~/Content/assets/js/bootstrap-datetimepicker2.js"></script>
+
+
+
+<style>
+    .Content_title {
+        display: none;
+    }
+
+    .content {
+        font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    .fc-view {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+
+
+    .fc-head {
+        background-color: #444;
+        color: white;
+    }
+
+    .fc-head-container {
+        border: none !important;
+    }
+
+    .fc-day-header {
+        border: solid 1px #444 !important;
+    }
+
+    /* 토요일 */
+
+    .fc-sat {
+        color: #55aaff;
+    }
+
+    .fc-state-highlight {
+    }
+
+    .Active td {
+        background: none;
+        background-color: none;
+    }
+
+    #external-events {
+        border: 1px solid #ccc;
+        border-top: 2px solid #444;
+        display: block;
+        float: right;
+        margin: 56px 20px 20px 10px;
+        padding: 0 10px;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        z-index: 999;
+    }
+
+        #external-events h4 {
+            font-size: 16px;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+
+        #external-events .fc-event {
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        #external-events p {
+            color: #666;
+            font-size: 11px;
+            margin: 1.5em 0;
+        }
+
+            #external-events p input {
+                margin: 0;
+                vertical-align: middle;
+            }
+
+    .memo_tr {
+        border-bottom: dotted 1px #444;
+        color: #000;
+        display: table;
+        padding: 2px;
+    }
+
+    .memo_input {
+        color: #000;
+        padding: 3px;
+    }
+
+    .memo_text_input {
+        border: solid 1px #a9a9a9;
+        border-radius: 5px;
+        color: #444;
+        font-size: 0.9em;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .memo_tr:hover {
+        color: #000;
+    }
+
+    .textarea {
+        border: solid 1px #a9a9a9;
+        color: #444;
+        height: 160px;
+        overflow-y: visible !important;
+        padding: 4px;
+        resize: vertical !important;
+        width: 100%;
+    }
+
+    .ps-container {
+        -ms-overflow-style: auto;
+        -ms-touch-action: auto;
+        overflow: auto !important;
+        touch-action: auto;
+    }
+
+    .cal_list {
+        border-bottom: dotted 1px #444;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 0.78em;
+        height: 16px;
+        line-height: 120%;
+        padding: 5px 0;
+    }
+
+    .cal_write {
+        border: solid 1px #444;
+        border-radius: 5px;
+        border-top: solid 2px #444;
+        display: table;
+        font-size: 1.0em;
+        padding: 0 5px;
+        background-color: #444;
+        color: #444
+    }
+
+    #p_name_p {
+        float: right;
+        font-size: 0.6em;
+        padding-top: 3px;
+    }
+
+    #external-events {
+        border: none;
+        display: table;
+        float: left;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        vertical-align: top;
+        width: 100%;
+        z-index: 999;
+    }
+</style>
+
+
+
+<!--content start-->
+<div class="container card ">
+    <div class="row" style="margin-bottom:10px">
+        <div class="container-fluid">
+
+            <div  class="col-md-2 " style="float:right;margin:10px">
+                @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "All", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+            </div>
+            <div class="col-md-12">
+                <div style="display: table; min-width: 320px;">
+                    <div id='calendar'></div>
+                </div>
+
+            </div>
+
+          
+
+
+        </div>
+    </div>
+
+</div>
+<div id="result"></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        var show_menu = "@open";
+
+
+        if (show_menu == "7") {
+            $("#show_menu").css("display", "block");
+            $(".machine_only").css("display", "block");
+
+
+        } else {
+            $("#show_menu").css("display", "none");
+            $(".machine_only").css("display", "none");
+        }
+
+
+        demo.initFormExtendedDatetimepickers();
+        @{
+
+
+          //  string company_id = Request.Cookies["web_company_id"].Value ?? "insstek";
+
+
+            if (!string.IsNullOrEmpty(open))
+            {
+                string _project = open;
+
+                <text>  $('#project_idx option[value=' + @_project + ']').attr('selected', 'selected');</text>
+            }
+
+
+        };
+        $('#aside').css('display', 'table');
+        var currentLangCode = 'ko';
+
+
+        var open_project = "@open";
+        if (open_project != "") {
+
+
+            $('#p_name_p').css("display", "block");
+            var p_name = "@start_date ~ @end_date";
+
+            $('#p_name').html("<div ><span style='font-weight:bold'>Period :</span> <span style='font-weight:normal;font-size:0.9em;'>" + p_name + "</span></div>");
+
+        } else {
+
+
+        }
+        var idx = "@idx";
+        if (idx != "") {
+
+            $('#title').css("color", "red");
+            $('#content').css("color", "red");
+
+
+        } else {
+            $('#title').css("border", "solid 1px #a9a9a9");
+            $('#content').css("border", "solid 1px #a9a9a9");
+
+        }
+
+        /* initialize the external events
+        -----------------------------------------------------------------*/
+
+        $('#external-events .fc-event').each(function() {
+
+            // store data so the calendar knows to render an event upon drop
+            $(this).data('event', {
+                title: $.trim($(this).text()), // use the element's text as the event title
+                stick: true // maintain when user navigates (see docs on the renderEvent method)
+            });
+
+            // make the event draggable using jQuery UI
+            $(this).draggable({
+                zIndex: 999,
+                revert: true,      // will cause the event to go back to its
+                revertDuration: 0  //  original position after the drag
+            });
+
+        });
+
+      
+
+
+        // page is now ready, initialize the calendar...
+
+
+        var project = $("#project_idx").val();
+
+
+        $('#calendar').fullCalendar({
+
+
+            header: {
+                left: 'listDay,listWeek,month',
+                center: 'prev title next'
+            },
+            editable: true,
+            eventDrop: function(event, delta, revertFunc) {
+
+
+                if (!confirm("Are you sure about this change?")) {
+
+
+                    revertFunc();
+                } else {
+                    //업데이트
+
+                    var end_date;
+
+
+                    try {
+                        end_date = event.end.format();
+                    } catch(e) {
+
+                        end_date = event.start.format();
+                    }
+
+
+                    var url_it = "/Calendar/cal_update?idx=" + event.id + "&start=" + event.start.format() + "&end=" + end_date + "&w=" + event.user_id + "&d=" + event.department_id;
+
+
+                    $.ajax({
+                        url: url_it,
+                        processData: false,
+                        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                        type: 'POST',
+                        success: function(data) {
+
+
+                            if (data == "N") {
+                                alert("You don't have permission.");
+                            }
+
+                        },
+                        error: function(request, status, error) {
+
+
+                            console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+
+                        }
+                    });
+                }
+
+
+            },
+
+            droppable: true, // this allows things to be dropped onto the calendar
+            drop: function(event, revertFunc) {
+                var _day = event.format();
+
+
+                //  $("#idx").attr("value", i)
+
+                if (!confirm("Are you sure about this change?")) {
+
+                    revertFunc();
+                } else {
+                    //업데이트
+                    var idx = $("#idx").val();
+                    if (idx == "") {
+                        alert("Select item!");
+                        return;
+                    }
+                 
+
+                   // var url_it = "/Calendar/cal_memo_insert?idx=" + idx + "&day=" + _day + "&w=" + user_id + "&d=" + department_id;
+
+
+                    $.ajax({
+                        url: url_it,
+                        processData: false,
+                        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                        type: 'POST',
+                        success: function(data) {
+
+
+                            if (data == "N") {
+                                alert("You don't have permission.");
+                            } else {
+
+                                location.href = "/Calendar/calendar_view/?open=" + project + "&idx=" + idx;
+                            }
+
+                        },
+                        error: function(request, status, error) {
+
+
+                            console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+
+                        }
+                    });
+                }
+                // is the "remove after drop" checkbox checked?
+                if ($('#drop-remove').is(':checked')) {
+                    // if so, remove the element from the "Draggable Events" list
+                    $(this).remove();
+                }
+            },
+            views: {
+                listDay: { buttonText: 'day' },
+                listWeek: { buttonText: 'week' },
+                month: { buttonText: 'month' }
+            },
+
+         
+            height: 766,
+            lang: currentLangCode,
+          
+            //국가 코드
+            locale: "@language_code",
+            businessHours: true, // display business hours
+
+            businessHours: {
+                start: '09:00',
+                end: '18:00',
+                dow: [1, 2, 3, 4, 5]
+            },
+
+
+
+            // editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            // put your options and callbacks here
+            eventSources: [
+                // your event source
+                {
+                    url: '/Calendar/GetCalendarItem?_type=1&open=' + project, // use the `url` property
+                    // an option!
+                    textColor: '#000',  // 등록
+                    backgroundColor: '#d7f6ff'
+                },
+                {
+                    url: '/Calendar/GetCalendarItem?_type=2&open=' + project, // use the `url` property
+                    // an option!
+                    textColor: 'black',  // 진행중
+                    backgroundColor: '#ffd800'
+                },
+                {
+                    url: '/Calendar/GetCalendarItem?_type=3&open=' + project, // use the `url` property
+                    // an option!
+                    textColor: 'black',  // 작업완료
+                    backgroundColor: '#f5f5f5'
+                },
+                {
+                    url: '/Calendar/GetCalendarItem?_type=4&open=' + project, // use the `url` property
+                    // an option!
+                    textColor: '#b4b1b1',  // 취소
+                    backgroundColor: '#eee'
+                }
+            ],
+
+            //특정일을 클릭했을 때 실행된다.
+            dayClick: function(date, jsEvent, view) {
+
+                //어느 날짜를 클릭했는지
+                // alert('Clicked on: ' + date.format());
+                //  window.open('/Calendar/calendar_set?sdate=' + date.format() + '&mode=W', '_s', 'width=750, height=680, left=300, top=100');
+                var project_idx = $("#project_idx").val();
+                var width = $(window).width();
+                var m_click = $("#m_click").val();
+
+                if (width <= 800) {
+
+                    location.href = '/Calendar/calendar_set?sdate=' + date.format() + '&mode=W&open=' + project_idx;
+                } else {
+
+                    location.href = '/Calendar/calendar_set?sdate=' + date.format() + '&mode=W&open=' + project_idx;
+                }
+
+
+            },
+
+            //특정 이벤트를 클릭했을 때 발생
+            eventClick: function(calEvent, jsEvent, view) {
+
+
+                var project_idx = $("#project_idx").val();
+                location.href = '/Calendar/calendar_set?idx=' + calEvent.id + '&mode=M&open=' + project_idx;
+
+
+            }
+        });
+    });
+
+    function pageRefresh() {
+        window.location.reload();
+    }
+
+    function rego() {
+        var project_idx = $("#project_idx").val();
+
+        location.href = "/Calendar/calendar_view/?open=" + project_idx;
+    }
+</script>
+
+@functions{
+    public void file_get(int idx)
+    {
+
+        {
+            var db = new db_e();
+
+            #region 첨부파일 가져오기
+
+            //테이블 수정 필요
+            string file_search = (from a in db.cal_memo where a.idx == idx select a.file_sn).FirstOrDefault(); // 테이블 변수
+
+            //========================================================================================================================================================
+            var File_list = db.file_list.Where(p => p.file_menu_id == 4 && p.file_idx == file_search).Select(c => new { 값 = c.idx, 이름 = c.file_pre_name });
+            ViewBag.파일리스트 = new SelectList(File_list.AsEnumerable(), "값", "이름");
+            //========================================================================================================================================================
+
+            <div id="file_list_show">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"> </label>
+                    <div class="col-md-10">
+                        @{
+
+                            foreach (SelectListItem file in (SelectList)ViewBag.파일리스트)
+                            {
+                                string f_name = "";
+                                try
+                                {
+                                    f_name = file.Text.Substring(14);
+                                }
+                                catch
+                                {
+                                }
+
+                                <ul>
+                                    <li>
+                                        @Html.ActionLink(f_name, "../Board/Fdown", new { name = file.Text })
+                                        @Html.Hidden("oriFileIdx", file.Value)
+
+                                    </li>
+                                </ul>
+                            }
+
+
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+
+            #endregion
+        }
+    }
+}

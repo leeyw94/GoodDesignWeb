@@ -103,10 +103,11 @@
 
 
                     <div class="form-horizontal">
-                        <div style="width:100%;padding:10px 0 20px 0">
-                            <img src="~/images/common/bullet01.png" style="width:22px" /> <span class="sub_title_black" style="font-size:1.7rem;position:relative;top:2px;left:5px">  @SmartFactory.Util.get_word.language_code(language, "Create")</span>
-                        </div>
+                      
 
+                        <div class="sub_title_black">
+                            @SmartFactory.Util.get_word.language_code(language, "Create")
+                        </div>
 
                         <hr />
 
@@ -197,7 +198,7 @@
                             </div>
                         </div>
 
-                        @if (ViewBag.파일 =="Y")
+                        @if (ViewBag.파일 == "Y")
                         {
 
 
@@ -215,7 +216,7 @@
                                         <a data-target="#collapseTwo" data-toggle="collapse">
                                             첨부파일
 
-                                           
+
                                         </a>
                                     </h4>
                                 </div>
@@ -259,9 +260,9 @@
                                                                 }
                                                                 else
                                                                 {
-                                                                  
-                                                                        <img src="~/images/no_img.gif" style="max-height:100px;cursor:pointer" onclick="file_down('@item.ImagePath','@item.fileName')" />
-                                                                    
+
+                                                                    <img src="~/images/no_img.gif" style="max-height:100px;cursor:pointer" onclick="file_down('@item.ImagePath','@item.fileName')" />
+
 
                                                                 }
                                                             </div>
@@ -282,7 +283,7 @@
 
                                                                     </span>
                                                                     <span style="margin-left:5px">
-                                                                        <img src="~/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" onclick="file_down('@item.ImagePath','@item.fileName')"/>
+                                                                        <img src="~/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" onclick="file_down('@item.ImagePath','@item.fileName')" />
                                                                     </span>
 
                                                                     <span class="mat-button-wrapper" onclick="del_one('@item.id',@idx,'@cate')">

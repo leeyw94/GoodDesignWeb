@@ -2356,7 +2356,7 @@
     };
 
     $.fn.datetimepicker.defaults = {
-        timeZone: 'Etc/UTC',
+        timeZone: 'ko',
         format: false,
         dayViewHeaderFormat: 'MMMM YYYY',
         extraFormats: false,

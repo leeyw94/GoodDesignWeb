@@ -44,8 +44,7 @@ namespace SmartFactory
           
 
             services.AddPaging(options => {
-                options.ViewName = "Bootstrap5";
-               
+                options.ViewName = "Bootstrap5";             
 
 
             });

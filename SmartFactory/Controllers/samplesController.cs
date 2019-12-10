@@ -14,11 +14,94 @@ namespace SmartFactory.Controllers
         private readonly db_e db = new db_e();
 
 
-        // GET: samples
+        #region 사용자 수정
+        // 리스트
         public async Task<IActionResult> sample_list()
         {
-            return View(await db.sample.ToListAsync());
+            return View(await db.sample.Where(p=>p.use_yn !="N").ToListAsync());
         }
+
+
+        // 작성 및 수정
+        public IActionResult sample_set(sample doc, int?idx)
+        {
+            //========================================================================================================================================================
+            var code_sample = db.code_sample.Where(p => p.use_yn != "N").OrderBy(P => P.index_order).Select(c => new { 값 = c.code_id, 이름 = c.code_name });
+            ViewBag.코드 = new SelectList(code_sample.AsEnumerable(), "값", "이름");
+
+            //========================================================================================================================================================
+
+            if(idx != null)
+            {
+                doc = db.sample.Single(x => x.idx == idx);
+
+            }
+
+
+            return View(doc);
+        }
+
+
+  
+        public async Task<IActionResult> sample_action(sample doc, int? idx, string mode_type)
+        {
+
+        
+
+            if (idx == null)
+            {
+                #region 저장
+                doc.use_yn = "Y";
+                doc.writeDate = DateTime.Now;
+                db.sample.Add(doc);
+                await db.SaveChangesAsync();
+
+
+                #endregion
+            }
+            else
+            {
+
+
+                if (mode_type == "D")
+                {
+                    #region 사용안함
+
+
+
+                    sample _update =
+                      (from a in db.sample where a.idx == idx select a).Single();
+
+                    _update.use_yn = "N";
+                    await db.SaveChangesAsync();
+
+                  
+
+                    #endregion
+                }
+                else
+                {
+                    #region 수정
+
+                    doc.writeDate = DateTime.Now;
+                    db.Entry(doc).State = EntityState.Modified;
+                    await db.SaveChangesAsync();
+
+                    return Redirect("/samples/sample_set?idx="+idx);
+
+                    #endregion
+                }
+            }
+
+
+            return Redirect("/samples/sample_list");
+        }
+
+        #endregion
+
+
+
+        #region 기본제공
 
         // GET: samples/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -38,18 +121,7 @@ namespace SmartFactory.Controllers
             return View(sample);
         }
 
-        // GET: samples/Create
-        public IActionResult sample_set()
-        {
-            //========================================================================================================================================================
-            var code_sample = db.code_sample.Where(p => p.use_yn != "N").OrderBy(P => P.index_order).Select(c => new { 값 = c.code_id, 이름 = c.code_name });
-            ViewBag.코드 = new SelectList(code_sample.AsEnumerable(), "값", "이름");
 
-            //========================================================================================================================================================
-
-
-            return View();
-        }
 
         // POST: samples/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -151,5 +223,6 @@ namespace SmartFactory.Controllers
         {
             return db.sample.Any(e => e.idx == id);
         }
+        #endregion
     }
 }

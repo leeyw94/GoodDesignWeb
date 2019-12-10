@@ -12,12 +12,12 @@ namespace SmartFactory.Models
             BoardRread = new HashSet<BoardRread>();
             New_work = new HashSet<New_work>();
             cal_memo = new HashSet<cal_memo>();
+            calendar = new HashSet<calendar>();
             history = new HashSet<history>();
             my_work = new HashSet<my_work>();
             project_actmaker_ = new HashSet<project_act>();
             project_actmanagerNavigation = new HashSet<project_act>();
             project_dir = new HashSet<project_dir>();
-            work_list = new HashSet<work_list>();
         }
 
         [Key]
@@ -77,6 +77,8 @@ namespace SmartFactory.Models
         [InverseProperty("user_")]
         public virtual ICollection<cal_memo> cal_memo { get; set; }
         [InverseProperty("user_")]
+        public virtual ICollection<calendar> calendar { get; set; }
+        [InverseProperty("user_")]
         public virtual ICollection<history> history { get; set; }
         [InverseProperty("user_")]
         public virtual ICollection<my_work> my_work { get; set; }
@@ -86,7 +88,5 @@ namespace SmartFactory.Models
         public virtual ICollection<project_act> project_actmanagerNavigation { get; set; }
         [InverseProperty("maker_")]
         public virtual ICollection<project_dir> project_dir { get; set; }
-        [InverseProperty("user_")]
-        public virtual ICollection<work_list> work_list { get; set; }
     }
 }

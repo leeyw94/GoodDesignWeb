@@ -35,7 +35,6 @@
 
   <ItemGroup>
     <None Include="Views\Shared\Components\Pager\Bootstrap5.cshtml" />
-    <None Include="wwwroot\Board\Board_imsi.js" />
     <None Include="wwwroot\ckeditor\adapters\jquery.js" />
     <None Include="wwwroot\ckeditor\build-config.js" />
     <None Include="wwwroot\ckeditor\CHANGES.md" />

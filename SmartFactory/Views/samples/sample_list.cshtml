@@ -53,9 +53,17 @@
                             @Html.DisplayFor(modelItem => item.writeDate)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.idx">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.idx">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.idx">Delete</a>
+                           
+
+                            <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                <img src="~/images/common/s_edit_icon.gif" onclick="go('/samples/sample_set?idx=@item.idx')" />
+                            </span>
+                            <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                                <img src="~/images/common/s_icon_del.gif" onclick="del_it('/samples/sample_action?idx=@item.idx') " />
+                            </span>
+
+
                         </td>
                     </tr>
                 }

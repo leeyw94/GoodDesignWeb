@@ -1,0 +1,11 @@
+﻿
+데이터 업데이트
+PM> Scaffold-DbContext "Server=tcp:180.210.34.49,1433;Initial Catalog=smartFactory;Persist Security Info=True;User ID=smartfactory_user;Password=smartfactory_user0037;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=300;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -DataAnnotations  -UseDatabaseNames  -Context db_e -force
+
+
+
+공용 스크립트 
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\wwwroot\Content\common.js
+
+이동 함수 : go('url'), go_url('url') 
+삭제 함수 : del_it('url')

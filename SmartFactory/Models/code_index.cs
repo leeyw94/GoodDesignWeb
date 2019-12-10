@@ -9,7 +9,7 @@ namespace SmartFactory.Models
     {
         public code_index()
         {
-            work_list = new HashSet<work_list>();
+            calendar = new HashSet<calendar>();
         }
 
         [Key]
@@ -24,7 +24,7 @@ namespace SmartFactory.Models
         [StringLength(10)]
         public string gubun { get; set; }
 
-        [InverseProperty("indexNavigation")]
-        public virtual ICollection<work_list> work_list { get; set; }
+        [InverseProperty("code_index_idxNavigation")]
+        public virtual ICollection<calendar> calendar { get; set; }
     }
 }

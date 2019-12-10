@@ -113,7 +113,7 @@
         }
        
         if (file_show == "Y") {
-            $(".file_show").css("display", "block");
+            $(".file_show").css("display", "table-cell");
         }
         else {
              $(".file_show").css("display", "none");
@@ -216,12 +216,11 @@
     <div class="col-md-12 card " style=" clear:both; min-height:45vh;">
         <div style="margin:20px 10px">
 
-
-            <div style="width:100%;padding:10px 0 20px 0">
-             <span class="sub_title_black" style="font-size:1.7rem;position:relative;top:2px;left:5px"> @ViewBag.타이틀 </span>
+            <div class="sub_title_black" style="margin-bottom:20px">
+                @SmartFactory.Util.get_word.language_code(language, "Create")
             </div>
 
-
+           
 
             <table class="tbl_azure">
                 <thead>
@@ -244,15 +243,10 @@
 
                         <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Writer")</th>
 
-                        @if (cate != "5")
-                        {
-
+                      
                             <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Date")</th>
-                        }
-                        else
-                        {
-                            <th style="width: 100px" class="text-center">등록일</th>
-                        }
+                        
+                   
 
                     </tr>
                 </thead>
@@ -271,10 +265,10 @@
 
                             </td>
 
-                           
 
-                            <td class="file_show">
-                                @{file_link(item.fileId);}
+
+                            <td class="file_show" >
+                                @{file_link(item.fileId);} 
 
                             </td>
 
@@ -282,9 +276,7 @@
                             <td class="text-center">@item.writer</td>
                             <td class="text-center">
 
-
-
-                                <span>@item.writeDate.ToShortDateString()</span>
+                              @item.writeDate.ToShortDateString()
 
 
                             </td>
@@ -368,22 +360,25 @@
 
         var _list = (from a in db.BoardFile where a.Md_id == id && a.use_yn !="N" select a).ToList();
 
-        foreach (var item in _list)
+        if (_list.Count > 0)
         {
+            foreach (var item in _list)
+            {
 
-            string file_size = (Convert.ToDouble(item.file_size) / 1000).ToString("###,###") +"Kbyte";
-            <text>      
+                string file_size = (Convert.ToDouble(item.file_size) / 1000).ToString("###,###") + "Kbyte";
 
-    <img src="/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" title="@file_size" onclick="file_down('@item.ImagePath','@item.fileName')" />
- </text>
+            <img src="/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" title="@file_size" onclick="file_down('@item.ImagePath','@item.fileName')" />
+
+            }
         }
+        
 
 
     }
 
 
 
-}
+    }
 <form id="file_download" action="~/Board/GetDownload" method="post">
     <input type="hidden" id="link" name="link" />
     <input type="hidden" id="file_name" name="file_name" />

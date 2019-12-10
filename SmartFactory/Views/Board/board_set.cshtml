@@ -23,15 +23,14 @@
     }
     catch
     {
-
-
+        
     }
+    
 
+    string company_idx = Context.Request.Query["company_idx"];
 
+}
 
- string company_idx = Context.Request.Query["company_idx"];
-
- }
 
 
 <partial name="~/Views/sys/setting_menu.cshtml" />
@@ -140,7 +139,7 @@
 
 
 </div>
-    <script type="text/javascript">
+<script type="text/javascript">
 
     $(document).ready(function() {
 
@@ -193,4 +192,4 @@
         location.href = "/board/board_set?company_idx=" + company_idx;
 
     }
-    </script>
+</script>

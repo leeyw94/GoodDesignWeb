@@ -3473,3 +3473,17 @@ E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\Smart
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csproj.CopyComplete
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_index.cshtml.g.cs
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Delete.cshtml.g.cs
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Details.cshtml.g.cs
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Edit.cshtml.g.cs
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_list.cshtml.g.cs
+F:\공유폴더\04. 이용우\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_index.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Delete.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Details.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Edit.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_view.cshtml.g.cs
