@@ -3706,3 +3706,14 @@ D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\Smar
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs

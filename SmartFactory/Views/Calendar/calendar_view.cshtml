@@ -26,12 +26,17 @@
 
 
 
-  
+
     string month = DateTime.Now.Month.ToString();
     string idx = Context.Request.Query["idx"];
     string open = Context.Request.Query["open"];
+    string department_idx = Context.Request.Query["d"];
 
-  
+    if (string.IsNullOrEmpty(department_idx)) {
+        department_idx = "";
+    }
+
+
     string start_date = "";
     string end_date = "";
 
@@ -223,10 +228,16 @@
 <div class="container card ">
     <div class="row" style="margin-bottom:10px">
         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 " style="float:right;margin:10px">
+                    @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "프로젝트 선택", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+                </div>
 
-            <div  class="col-md-2 " style="float:right;margin:10px">
-                @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "All", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+                <div class="col-md-2 " style="float:right;margin:10px">
+                    @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, "부서선택", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+                </div>
             </div>
+            <hr />
             <div class="col-md-12">
                 <div style="display: table; min-width: 320px;">
                     <div id='calendar'></div>
@@ -261,7 +272,8 @@
             $(".machine_only").css("display", "none");
         }
 
-
+        // $('#department_id option[value=@department_idx]').attr('selected', 'selected');
+   
         demo.initFormExtendedDatetimepickers();
         @{
 
@@ -279,7 +291,7 @@
 
         };
         $('#aside').css('display', 'table');
-        var currentLangCode = 'ko';
+        var currentLangCode = '@language_code';
 
 
         var open_project = "@open";
@@ -338,7 +350,7 @@
 
 
         $('#calendar').fullCalendar({
-
+          
 
             header: {
                 left: 'listDay,listWeek,month',
@@ -365,8 +377,8 @@
                         end_date = event.start.format();
                     }
 
-
-                    var url_it = "/Calendar/cal_update?idx=" + event.id + "&start=" + event.start.format() + "&end=" + end_date + "&w=" + event.user_id + "&d=" + event.department_id;
+                   
+                    var url_it = "/Calendar/cal_update?idx=" + event.id + "&start=" + event.start.format() + "&end=" + end_date + "&w=" + event.user_id + "&d=" + event.department_idx;
 
 
                     $.ajax({
@@ -412,6 +424,13 @@
                         return;
                     }
                  
+                    var department_idx = $("#department_idx").val();
+                    if (department_idx == null) {
+
+                        department_idx = "";
+
+                    }
+
 
                    // var url_it = "/Calendar/cal_memo_insert?idx=" + idx + "&day=" + _day + "&w=" + user_id + "&d=" + department_id;
 
@@ -428,7 +447,7 @@
                                 alert("You don't have permission.");
                             } else {
 
-                                location.href = "/Calendar/calendar_view/?open=" + project + "&idx=" + idx;
+                                location.href = "/Calendar/calendar_view/?open=" + project + "&idx=" + idx+ "&d="+department_idx;
                             }
 
                         },
@@ -486,13 +505,13 @@
                     backgroundColor: '#ffd800'
                 },
                 {
-                    url: '/Calendar/GetCalendarItem?_type=3&open=' + project, // use the `url` property
+                    url: '/Calendar/GetCalendarItem?_type=3&open=' +project, // use the `url` property
                     // an option!
                     textColor: 'black',  // 작업완료
                     backgroundColor: '#f5f5f5'
                 },
                 {
-                    url: '/Calendar/GetCalendarItem?_type=4&open=' + project, // use the `url` property
+                    url: '/Calendar/GetCalendarItem?_type=4&open=' +project, // use the `url` property
                     // an option!
                     textColor: '#b4b1b1',  // 취소
                     backgroundColor: '#eee'
@@ -508,6 +527,7 @@
                 var project_idx = $("#project_idx").val();
                 var width = $(window).width();
                 var m_click = $("#m_click").val();
+                
 
                 if (width <= 800) {
 
@@ -538,8 +558,8 @@
 
     function rego() {
         var project_idx = $("#project_idx").val();
-
-        location.href = "/Calendar/calendar_view/?open=" + project_idx;
+        var department_idx = $("#department_idx").val();
+        location.href = "/Calendar/calendar_view/?open=" + project_idx +"&d="+department_idx;
     }
 </script>
 

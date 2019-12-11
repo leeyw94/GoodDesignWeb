@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj": {}
+    "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj": {}
   },
   "projects": {
-    "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj": {
+    "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj",
+        "projectUniqueName": "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj",
         "projectName": "SmartFactory",
-        "projectPath": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj",
-        "packagesPath": "C:\\Users\\helpb\\.nuget\\packages\\",
-        "outputPath": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\obj\\",
+        "projectPath": "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\SmartFactory.csproj",
+        "packagesPath": "C:\\Users\\헤레나\\.nuget\\packages\\",
+        "outputPath": "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb\\SmartFactory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\helpb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\헤레나\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,6 +100,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -108,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
