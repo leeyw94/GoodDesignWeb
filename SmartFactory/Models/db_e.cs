@@ -33,6 +33,7 @@ namespace SmartFactory.Models
         public virtual DbSet<Md_Image> Md_Image { get; set; }
         public virtual DbSet<New_work> New_work { get; set; }
         public virtual DbSet<Process> Process { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<QA> QA { get; set; }
         public virtual DbSet<cal_memo> cal_memo { get; set; }
         public virtual DbSet<calendar> calendar { get; set; }
@@ -44,8 +45,10 @@ namespace SmartFactory.Models
         public virtual DbSet<code_index> code_index { get; set; }
         public virtual DbSet<code_machine_spec> code_machine_spec { get; set; }
         public virtual DbSet<code_main> code_main { get; set; }
+        public virtual DbSet<code_material_spec> code_material_spec { get; set; }
         public virtual DbSet<code_nationality> code_nationality { get; set; }
         public virtual DbSet<code_position> code_position { get; set; }
+        public virtual DbSet<code_product_spec> code_product_spec { get; set; }
         public virtual DbSet<code_project_state> code_project_state { get; set; }
         public virtual DbSet<code_sample> code_sample { get; set; }
         public virtual DbSet<code_time> code_time { get; set; }
@@ -60,6 +63,7 @@ namespace SmartFactory.Models
         public virtual DbSet<history> history { get; set; }
         public virtual DbSet<language> language { get; set; }
         public virtual DbSet<machine> machine { get; set; }
+        public virtual DbSet<material> material { get; set; }
         public virtual DbSet<member> member { get; set; }
         public virtual DbSet<member_list> member_list { get; set; }
         public virtual DbSet<my_work> my_work { get; set; }
@@ -372,6 +376,23 @@ namespace SmartFactory.Models
                 entity.Property(e => e.wrtie_date).HasDefaultValueSql("(getdate())");
             });
 
+            modelBuilder.Entity<Product>(entity =>
+            {
+                entity.Property(e => e.pName).IsUnicode(false);
+
+                entity.Property(e => e.product_idx).HasComment("회사코드");
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+
+                entity.Property(e => e.writeDate).HasDefaultValueSql("(getdate())");
+
+                entity.HasOne(d => d.code_product_spec_idxNavigation)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.code_product_spec_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Product_code_product_spec");
+            });
+
             modelBuilder.Entity<QA>(entity =>
             {
                 entity.Property(e => e.gubun).IsUnicode(false);
@@ -612,6 +633,21 @@ namespace SmartFactory.Models
                 entity.Property(e => e.use_yn).IsUnicode(false);
             });
 
+            modelBuilder.Entity<code_material_spec>(entity =>
+            {
+                entity.Property(e => e.code_name)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.code_name_en)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.gubun).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+            });
+
             modelBuilder.Entity<code_nationality>(entity =>
             {
                 entity.HasKey(e => e.code_id)
@@ -647,6 +683,21 @@ namespace SmartFactory.Models
                     .HasForeignKey(d => d.company_idx)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_code_position_company");
+            });
+
+            modelBuilder.Entity<code_product_spec>(entity =>
+            {
+                entity.Property(e => e.code_name)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.code_name_en)
+                    .IsUnicode(false)
+                    .HasComment("중류");
+
+                entity.Property(e => e.gubun).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
             });
 
             modelBuilder.Entity<code_project_state>(entity =>
@@ -1004,6 +1055,29 @@ namespace SmartFactory.Models
                     .HasForeignKey(d => d.code_machine_spec_idx)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_machine_code_machine_spec");
+
+                entity.HasOne(d => d.company_idxNavigation)
+                    .WithMany(p => p.machine)
+                    .HasForeignKey(d => d.company_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_machine_company");
+            });
+
+            modelBuilder.Entity<material>(entity =>
+            {
+                entity.Property(e => e.aName).IsUnicode(false);
+
+                entity.Property(e => e.material_idx).HasComment("회사코드");
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+
+                entity.Property(e => e.writeDate).HasDefaultValueSql("(getdate())");
+
+                entity.HasOne(d => d.code_material_spec_idxNavigation)
+                    .WithMany(p => p.material)
+                    .HasForeignKey(d => d.code_material_spec_idx)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_material_code_material_spec");
             });
 
             modelBuilder.Entity<member>(entity =>

@@ -13,6 +13,7 @@ namespace SmartFactory.Models
             calendar = new HashSet<calendar>();
             code_position = new HashSet<code_position>();
             department = new HashSet<department>();
+            machine = new HashSet<machine>();
             user = new HashSet<user>();
         }
 
@@ -57,6 +58,8 @@ namespace SmartFactory.Models
         public virtual ICollection<code_position> code_position { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<department> department { get; set; }
+        [InverseProperty("company_idxNavigation")]
+        public virtual ICollection<machine> machine { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<user> user { get; set; }
     }

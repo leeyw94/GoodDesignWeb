@@ -1,0 +1,121 @@
+﻿@model SmartFactory.Models.material
+
+@{
+
+    string Mode = "i";
+    string idx = Context.Request.Query["idx"];
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+}
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+}
+
+
+<div class="container sub_page">
+
+
+
+    <form action="/management/Material_action" name="form1" id="form1" method="post" enctype="multipart/form-data">
+
+
+        <input type="hidden" name="idx" id="idx" value="@idx" />
+        <input type="hidden" name="use_yn" id="use_yn" value="@Model.use_yn" />
+
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+
+            <div class="sub_title_black">
+                @SmartFactory.Util.get_word.language_code(language, "addnew")
+            </div>
+
+            <hr />
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "materialname")</label>
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.aName, new { htmlAttributes = new { @class = "form-control" } })
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "material_idx")</label>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.material_idx, new { htmlAttributes = new { @class = "form-control" } })
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "materialspec")</label>
+                <div class="col-md-4">
+                    @Html.DropDownList("code_material_spec", (SelectList)ViewBag.코드, new { @class = "selectpicker", @onchange = "search_it()" })
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="form-group">
+                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                    <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">
+                        @SmartFactory.Util.get_word.language_code(language, "save")
+                    </div>
+
+
+                    <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/management/material_list') ">
+
+                        @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+
+</div>
+
+
+<script>
+
+    function save_it() {
+        check("aName", "form1");
+    }
+
+
+</script>

@@ -1,0 +1,152 @@
+﻿@model SmartFactory.Models.machine
+
+@{
+
+    string Mode = "i";
+    string idx = Context.Request.Query["idx"];
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+}
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+}
+
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+<div class="container sub_page">
+
+
+
+    <form action="/management/machine_action" name="form1" id="form1" method="post" enctype="multipart/form-data">
+
+
+        <input type="hidden" name="idx" id="idx" value="@idx" />
+        <input type="hidden" name="use_yn" id="use_yn" value="@Model.use_yn" />
+
+        @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        <div class="sub_title_black">
+            @SmartFactory.Util.get_word.language_code(language, "MachineManagement")
+        </div>
+
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "machinename")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.mName, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "Manufacturer")</label>
+            <div class="col-md-4">
+                @Html.DropDownList("company_idx", (SelectList)ViewBag.거래처, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "machinespec")</label>
+            <div class="col-md-4">
+                @Html.DropDownList("code_machine_spec", (SelectList)ViewBag.코드, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "info") </label>
+            <div class="col-md-9">
+
+                @Html.TextAreaFor(a => a.info, new { Class = "form-control" })
+
+                <script>
+                    CKEDITOR.replace('info', {
+                        filebrowserUploadUrl: '/Board/BoardImageUpload?type=Files',
+                        filebrowserImageUploadUrl: '/Board/BoardImageUpload?type=Images',
+                        height: '300px',
+                        width: '100%'
+                    });
+                    CKEDITOR.on('dialogDefinition', function (ev) {
+                        // Take the dialog name and its definition from the event data.
+                        var dialogName = ev.data.name;
+                        var dialogDefinition = ev.data.definition;
+                        // Check if the definition is from the dialog we're
+                        // interested in (the 'image' dialog).
+                        if (dialogName == 'image') {
+                            // Get a reference to the 'Image Info' tab.
+
+                            dialogDefinition.removeContents('advanced');
+                            dialogDefinition.removeContents('Link');
+
+
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">
+                    @SmartFactory.Util.get_word.language_code(language, "save")
+                </div>
+
+
+                <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/management/machine_list') ">
+
+                    @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+
+
+
+
+
+</div>
+
+
+<script>
+
+       function save_it() {
+        check("mName", "form1");
+         }
+
+
+</script>
