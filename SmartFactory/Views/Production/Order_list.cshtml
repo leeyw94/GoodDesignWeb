@@ -1,0 +1,95 @@
+﻿@model IEnumerable<SmartFactory.Models.order>
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+}
+
+
+<div class="container sub_page">
+
+
+    <div class="sub_title_black">
+        @SmartFactory.Util.get_word.language_code(language, "setting")
+    </div>
+    <hr />
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    No
+                </th>
+                <th>
+                    시작일
+                </th>
+                <th>
+                    종료일
+                </th>
+                <th>
+                    주문내역
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "orderer")
+                </th>
+                <th>
+                    @SmartFactory.Util.get_word.language_code(language, "date")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td style="width:50px">@item.idx</td>
+                <td style="width:100px"> @item.start_date.ToShortDateString()</td>
+                <td style="width:100px">@item.end_date.ToShortDateString()</td>
+                <td style="width:50px">@item.orderList</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.company_idxNavigation.company_name)
+                </td>
+                <td style="width:120px">
+
+
+                    @item.writeDate.ToShortDateString()
+
+                </td>
+                <td>
+
+
+                    <span type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                        <img src="~/images/common/s_edit_icon.gif" onclick="go('/Production/Order_set?idx=@item.idx')" />
+                    </span>
+                    <span type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+
+                        <img src="~/images/common/s_icon_del.gif" onclick="del_it('/Production/Order_action?idx=@item.idx') " />
+                    </span>
+
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+        <div class="btn btn-default btn-fill btn-wd   btn-info" onclick="go('Order_set') ">
+
+            @SmartFactory.Util.get_word.language_code(language, "create")
+        </div>
+    </div>
+
+
+
+</div>

@@ -14,6 +14,7 @@ namespace SmartFactory.Models
             code_position = new HashSet<code_position>();
             department = new HashSet<department>();
             machine = new HashSet<machine>();
+            order = new HashSet<order>();
             user = new HashSet<user>();
         }
 
@@ -60,6 +61,8 @@ namespace SmartFactory.Models
         public virtual ICollection<department> department { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<machine> machine { get; set; }
+        [InverseProperty("company_idxNavigation")]
+        public virtual ICollection<order> order { get; set; }
         [InverseProperty("company_idxNavigation")]
         public virtual ICollection<user> user { get; set; }
     }

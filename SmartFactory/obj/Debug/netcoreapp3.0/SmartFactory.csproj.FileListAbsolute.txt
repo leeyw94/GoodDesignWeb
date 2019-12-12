@@ -3717,3 +3717,5 @@ E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\Smart
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_set.cshtml.g.cs

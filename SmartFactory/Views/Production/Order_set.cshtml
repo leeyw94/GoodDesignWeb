@@ -1,0 +1,328 @@
+﻿@model SmartFactory.Models.order
+
+@{
+
+    string Mode = "i";
+    string idx = Context.Request.Query["idx"];
+    string open = Context.Request.Query["open"];
+    string mode = Context.Request.Query["mode"];
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+    string mode_type = Context.Request.Query["mode"];
+    if (string.IsNullOrEmpty(mode_type))
+    {
+        mode_type = "W";
+    }
+}
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+}
+
+<script src="~/Content/assets/js/moment.min.js"></script>
+<script src="~/Content/assets/js/bootstrap-datetimepicker2.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+                var company_idx = "@ViewBag.company_idx";
+                var code_work_idx = "@Model.code_work_idx";
+                var project_idx = "@Model.project_idx";
+
+
+                if (code_index_idx == "") {
+                    code_index_idx = 1;
+                }
+
+
+                var mode = '@Mode';
+
+
+
+                var open_it = '@Model.open_it';
+           if (mode == "e") {
+
+                    company_idx = '@Model.company_idx';
+            $('#company_idx option[value=' + company_idx + ']').attr('selected', 'selected');
+            $('#code_work_idx option[value=' + code_work_idx + ']').attr('selected', 'selected');
+            $('#project_idx option[value=' + project_idx + ']').attr('selected', 'selected');
+
+
+                    if (open_it == "Y") {
+                $('#open_it').attr("checked", true);
+                    } else {
+                $('#open_it').attr("checked", false);
+                    }
+
+
+                } else {
+                    //등록모드
+            var project_idx = "@open";
+            $('#start_date').val('@ViewBag.start_date');
+            $('#end_date').val('@ViewBag.end_date');
+            $('#project_idx').val(project_idx);
+            $('#company_idx option[value=' + company_idx + ']').attr('selected', 'selected');
+
+            $(".btn_remove").css("display", "none");
+
+                }
+
+
+                if (project_idx == "200") {
+            $('#open_it').attr('checked', 'checked');
+
+                }
+
+
+        $('#form1').validate();
+
+
+            });
+
+    function save_it() {
+
+                var startDate1 = $("#start_date").val().substring(0, 10);
+                var startDate2 = $("#start_date").val().substring(11, 13);
+                var startDate3 = $("#start_date").val().substring(14, 16);
+
+
+                var endDate1 = $("#end_date").val().substring(0, 10);
+                var endDate2 = $("#end_date").val().substring(11, 13);
+                var endDate3 = $("#end_date").val().substring(14, 16);
+
+
+                var startDate   = startDate1.split("-");
+                var endDate     = endDate1.split("-");
+
+
+
+                var day1 = new Date(startDate[0], startDate[1], startDate[2], startDate2,  startDate3).valueOf();
+
+                var day2 = new Date(endDate[0], endDate[1], endDate[2], endDate2, endDate3).valueOf();
+
+
+
+                if (day1 > day2) {
+
+                    alert("시작일이 종료일보다 큽니다. 다시 선택해 주세요.");
+                    return;
+
+                }
+                else {
+                    check("title,start_date,end_date", "form1");
+
+                }
+
+
+
+
+            }
+            function check_day(){
+
+                var startDate1 = $("#start_date").val().substring(0, 10);
+                var startDate2 = $("#start_date").val().substring(11, 13);
+                var startDate3 = $("#start_date").val().substring(14, 16);
+
+
+                var endDate1 = $("#end_date").val().substring(0, 10);
+                var endDate2 = $("#end_date").val().substring(11, 13);
+                var endDate3 = $("#end_date").val().substring(14, 16);
+
+
+                var startDate = startDate1.split("-");
+                var endDate = endDate1.split("-");
+
+
+
+                var day1 = new Date(startDate[0], startDate[1], startDate[2], startDate2, startDate3).valueOf();
+
+                var day2 = new Date(endDate[0], endDate[1], endDate[2], endDate2, endDate3).valueOf();
+
+                if (day1 > day2) {
+
+                    alert("시작일이 종료일보다 큽니다. 다시 선택해 주세요.");
+                    return;
+
+                }
+            }
+
+
+
+</script>
+
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+<div class="container sub_page">
+
+
+
+    <form action="/Production/Order_action" name="form1" id="form1" method="post" enctype="multipart/form-data">
+
+
+        <input type="hidden" name="idx" id="idx" value="@idx" />
+        <input type="hidden" name="use_yn" id="use_yn" value="@Model.use_yn" />
+
+        @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        <div class="sub_title_black">
+            @SmartFactory.Util.get_word.language_code(language, "ordermanagement")
+        </div>
+
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "orderer")</label>
+            <div class="col-md-4">
+                @Html.DropDownList("company_idx", (SelectList)ViewBag.거래처, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "orderlist")</label>
+            <div class="col-md-9">
+
+                @Html.TextAreaFor(a => a.orderList, new { Class = "form-control" })
+
+                <script>
+                    CKEDITOR.replace('orderList', {
+                        filebrowserUploadUrl: '/Board/BoardImageUpload?type=Files',
+                        filebrowserImageUploadUrl: '/Board/BoardImageUpload?type=Images',
+                        height: '300px',
+                        width: '100%'
+                    });
+                    CKEDITOR.on('dialogDefinition', function (ev) {
+                        // Take the dialog name and its definition from the event data.
+                        var dialogName = ev.data.name;
+                        var dialogDefinition = ev.data.definition;
+                        // Check if the definition is from the dialog we're
+                        // interested in (the 'image' dialog).
+                        if (dialogName == 'image') {
+                            // Get a reference to the 'Image Info' tab.
+
+                            dialogDefinition.removeContents('advanced');
+                            dialogDefinition.removeContents('Link');
+
+
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "quantity")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.orderQty, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">시작 및 종료 날짜</label>
+            <div class="col-md-2">
+
+                <input type="text" name="start_date" id="start_date" class="form-control datetimepicker" value="@Model.start_date.ToShortDateString()" />
+            </div>
+            <div class="col-xs-2" style="width: 30px;"> ~</div>
+            <div class="col-md-2">
+
+                <input type="text" name="end_date" id="end_date" class="form-control datetimepicker" value="@Model.end_date.ToShortDateString()" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "manager")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.who, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "contact")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.contact, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">진행 상황</label>
+            <div class="col-md-2" rel="tooltip" title="일정 진행 상황입니다.">
+                @Html.DropDownList("code_work_idx", (SelectList)ViewBag.작업상태, new { @class = "selectpicker" })
+            </div>
+        </div>
+
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">
+                    @SmartFactory.Util.get_word.language_code(language, "save")
+                </div>
+
+
+                <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/Production/Order_list') ">
+
+                    @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+
+
+
+
+
+</div>
+
+
+<script>
+
+    function save_it() {
+        check("orderList", "form1");
+    }
+
+
+</script>
+<script type="text/javascript">
+    $().ready(function () {
+
+
+
+        // Init DatetimePicker
+        demo.initFormExtendedDatetimepickers();
+    });
+</script>
