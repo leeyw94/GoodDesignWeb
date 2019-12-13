@@ -15,12 +15,9 @@
 
     {
         <li>
-            <a href="/account/LogOff" class="text-danger">
-                <i class="pe-7s-close-circle"></i>
-
-                Log Out
-
-            </a>
+            <form class="form-inline" id="form_login" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <span onclick="logout()" style="cursor:pointer;color:red;">Logout</span>
+            </form>
         </li>
     }
     <li style="border-top: solid 1px #eee; cursor: help; font-size: 0.75em; padding: 2px; text-indent: 10px;font-weight:bold">User ID : @User.Identity.Name</li>

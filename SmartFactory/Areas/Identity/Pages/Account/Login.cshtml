@@ -4,57 +4,70 @@
 @{
     ViewData["Title"] = "Log in";
 }
-    <link href="~/Content/assets/css/material.css" rel="stylesheet" />
+<link href="~/Content/assets/css/material.css" rel="stylesheet" />
 
-<div class="row">
-    <div class="col-md-6">
-        <section>
+
+<div class="row" style="margin:0;">
+    <div class="container">
+        <section class="col-md-6 col-md-offset-3">
             <div class="card" style="padding:10px">
                 <form id="account" method="post">
-                  
-                    <h4 style="text-align:center">Good Design log in.</h4>
-                    <hr />
+
+                    <h3 style="text-align:center;color:#fff;margin-top:30px;margin-bottom:40px">Good Design.</h3>
                     <div asp-validation-summary="All" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Input.Email"></label>
-                        <input asp-for="Input.Email" class="form-control" />
-                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                        <div class="form-control">
+                            <span class="col-xs-1" style="padding:0;"><i class="pe-7s-user"></i></span>
+                            <label class="col-md-3 col-xs-4" asp-for="Input.Email"></label>
+                            <input class="col-md-8 col-xs-7" asp-for="Input.Email" />
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                        <div class="form-control">
+                            <span class="col-xs-1" style="padding:0;"><i class="pe-7s-lock"></i></span>
+                            <label class="col-md-3 col-xs-4" asp-for="Input.Password"></label>
+                            <input class="col-md-8 col-xs-7" asp-for="Input.Password" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Input.Password"></label>
-                        <input asp-for="Input.Password" class="form-control" />
-                        <span asp-validation-for="Input.Password" class="text-danger"></span>
-                    </div>
-                           <div class="form-group">
 
 
                         @*<div class="checkbox2">
-                            <label asp-for="Input.RememberMe">
-                                <input type="checkbox" name="Input.RememberMe" />
+                                <label asp-for="Input.RememberMe">
+                                    <input type="checkbox" name="Input.RememberMe" />
 
-                                @Html.DisplayNameFor(m => m.Input.RememberMe)
-                            </label>
-                        </div>*@
+                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                </label>
+                            </div>*@
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-10 col-md-offset-1">
                         <button type="submit" class="btn btn-primary">Log in</button>
                     </div>
-                    <div class="form-group">
-                        <p>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                        <p class="col-md-6" style="text-align:center;">
                             <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
                         </p>
-                        <p>
+                        <p class="col-md-6" style="text-align:center;">
                             <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
                         </p>
                         @*<p>
-                    <button type="submit" asp-page-handler="SendVerificationEmail" class="btn-link" style="padding:0px;margin:0px;border:0px">Resend email confirmation</button>
-                </p>*@
+                                <button type="submit" asp-page-handler="SendVerificationEmail" class="btn-link" style="padding:0px;margin:0px;border:0px">Resend email confirmation</button>
+                            </p>*@
                     </div>
                 </form>
             </div>
         </section>
     </div>
-    <div class="col-md-6 ">
+
+
+
+
+
+
+
+    @*<div class="col-md-6 ">
 
         @{
             if ((Model.ExternalLogins?.Count ?? 0) == 0)
@@ -81,6 +94,49 @@
                 </section>
                 }
             }
-        </div>
+        </div>*@
 </div>
+
+<style>
+    .form-control {
+        height: 50px;
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 2.5em;
+        color: #888 !important;
+    }
+
+    label {
+        font-weight: 400;
+        height: 100%;
+        margin-bottom:0;
+    }
+
+    input {
+        border: 0;
+        height: 100%;
+        font-weight: 400;
+    }
+
+    [class^='pe-7s-'], [class*=' pe-7s-'] {
+        font-size: 1.6em;
+        line-height: 1.6em;
+    }
+    
+    .btn {
+        width:100%;
+        box-shadow:none;
+    }
+    .btn:hover, .btn:target {
+        box-shadow:none;
+    }
+
+    a {
+        color:#fff;
+    }
+    a:hover, a:target {
+        color:#0a3145
+    }
+
+</style>
 

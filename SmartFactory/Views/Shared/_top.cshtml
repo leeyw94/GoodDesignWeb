@@ -131,7 +131,7 @@
 
 }
 
-<nav class="navbar navbar-default" style="background-color: #e5e5e7; height: 60px;">
+<nav class="navbar navbar-default" style="background-color: #fff; height: 60px;">
 
     <div class="container-fluid">
 
@@ -169,7 +169,7 @@
                         <span style="color:#fa6c58;float:right;padding:10px ">
 
                             <form class="form-inline" id="form_login" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                                <span onclick="logout()">Logout</span>
+                                <span onclick="logout()" style="cursor:pointer">Logout</span>
                             </form>
                         </span>
 
