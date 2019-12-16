@@ -7,11 +7,6 @@ namespace SmartFactory.Models
 {
     public partial class code_position
     {
-        public code_position()
-        {
-            user = new HashSet<user>();
-        }
-
         [Key]
         public int code_id { get; set; }
         [Required]
@@ -30,7 +25,5 @@ namespace SmartFactory.Models
         [ForeignKey(nameof(company_idx))]
         [InverseProperty(nameof(company.code_position))]
         public virtual company company_idxNavigation { get; set; }
-        [InverseProperty("position_idxNavigation")]
-        public virtual ICollection<user> user { get; set; }
     }
 }

@@ -226,7 +226,7 @@
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label"> </label>
                                         <div class="col-md-4">
-                                            <span class="btn btn-info " onclick="AddFile($(this), 'file_list', 'files')" style="background:#fff; border:0;color:#095eb1;font-weight:bold">
+                                            <span class="btn btn-info " onclick="AddFile($(this), 'file_list', 'files')" style="background:#fff; border:0;color:#333;font-weight:bold">
                                                 <img src="~/images/common/icon_save.gif" /> @SmartFactory.Util.get_word.language_code(language, "attachment file")
                                             </span>
                                         </div>
@@ -318,14 +318,14 @@
                                     {
                                         if (ViewBag.권한 == "Y" || ViewBag.권한 == "E")
                                         {
-                                            <div class="btn btn-default btn-fill btn-wd   btn-info loading" onclick="save_it() " style="background:#095eb1; border:0;margin-right:1%;margin-top:1%"> @SmartFactory.Util.get_word.language_code(language, "save")</div>}
+                                            <div class="btn btn-default btn-fill btn-wd   btn-info loading" onclick="save_it() " style="margin-right:1%;margin-top:1%"> @SmartFactory.Util.get_word.language_code(language, "save")</div>}
                                     }
                                     else
                                     {
 
                                         if (ViewBag.권한 == "Y" || ViewBag.권한 == "E")
                                         {
-                                            <div class="btn btn-default btn-fill btn-wd   btn-info loading" onclick="save_it() " style="background:#095eb1; border:0;margin-right:1%;margin-top:1%">  @SmartFactory.Util.get_word.language_code(language, "save")</div>
+                                            <div class="btn btn-default btn-fill btn-wd   btn-info loading" onclick="save_it() " style="margin-right:1%;margin-top:1%">  @SmartFactory.Util.get_word.language_code(language, "save")</div>
                                             <div class="btn btn-default btn-fill btn-wd   btn-danger loading" id="Delbtn" style="border:0;margin-right:1%;margin-top:1%"> @SmartFactory.Util.get_word.language_code(language, "Remove")</div>
 
                                         }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="good.theblueeye.com" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\03\.\ 프로젝트\ _\ 김지혜\\4\.\ GoodDesign\ SmarFactory\ Web\\GoodDesignWeb\\SmartFactory\\obj\\Release\\netcoreapp3\.0\\PubTmp\\Out\\$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\00\.\ 프로젝트\ 홈작업\\00\.\ GoodDesign\ SmarFactory\ Web\\GoodDesignWeb4\ \(2\)\ \(2\)\\SmartFactory\\obj\\Release\\netcoreapp3\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

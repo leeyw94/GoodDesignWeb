@@ -18,6 +18,8 @@ using Microsoft.Extensions.Configuration;
 using LazZiya.ImageResize;
 using System.IO;
 using SmartFactory.Util;
+using ReflectionIT.Mvc.Paging;
+using Microsoft.AspNetCore.Routing;
 
 namespace SmartFactory.Controllers
 {
@@ -1236,10 +1238,101 @@ namespace SmartFactory.Controllers
         /// <param name="_state">처리상태(입력,수정,삭제)</param>
         /// 
 
-       
+
+
+        #endregion
+
+
+        #region 언어등록
+            // 리스트
+        public async Task<IActionResult> language_list()
+        {
+            return View(await db.language.ToListAsync());
+        }
+
+
+ 
+        public async Task<IActionResult> language_set(language doc, int? idx, string sortExpression = "-idx", int page = 1)
+        {
+
+
+         
+
+
+            if (idx != null)
+            {
+
+
+                doc = db.language.Single(x => x.idx == idx);
+            }
+
+
+            var query = db.language.AsNoTracking();
+            var model = await PagingList.CreateAsync(query, 100, page, sortExpression, "-idx");
+
+          
+          
+            ViewBag.리스트 = model;
+
+            return View(doc);
+        }
+
+
+        public async Task<IActionResult> language_action(language doc, int? idx, string mode_type)
+        {
+
+
+
+            if (idx == null)
+            {
+                #region 저장
+              
+                db.language.Add(doc);
+                await db.SaveChangesAsync();
+
+
+                #endregion
+            }
+            else
+            {
+                if (mode_type == "D")
+                {
+                    #region 삭제
+
+                    language doc_del = db.language.Single(x => x.idx == idx);
+                    db.language.Remove(doc_del);
+                    db.SaveChanges();
+
+                 
+
+                    #endregion
+                }
+                else
+                {
+
+
+                    #region 수정
+
+
+                    language _update =
+                        (from a in db.language where a.idx == idx select a).Single();
+
+                    _update.korea = doc.korea;
+                    _update.english = doc.english;
+
+
+                    await db.SaveChangesAsync();
+
+                    #endregion
+                }
+            }
+
+
+            return Redirect("/sys/language_set");
+        }
 
         #endregion
     }
 
-   
+
 }

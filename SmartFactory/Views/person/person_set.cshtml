@@ -1,0 +1,319 @@
+﻿@model SmartFactory.Models.person
+@using SmartFactory.Util;
+@{
+
+    string Mode = "i";
+    string idx = Context.Request.Query["idx"];
+    if (string.IsNullOrEmpty(idx))
+    {
+        Mode = "i";
+    }
+    else
+    {
+        Mode = "e";
+    }
+
+}
+
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+}
+
+@{
+
+    string work_start_date = DateTime.Today.ToShortDateString();
+
+    if (Model.work_start_date.ToShortDateString() != "0001-01-01")
+    {
+        work_start_date = Model.work_start_date.ToShortDateString();
+
+    }
+
+
+}
+<script src="~/Content/Board/moment.min.js"></script>
+<script src="~/Content/assets/js/bootstrap-datetimepicker.js"></script>
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+
+<div class="container sub_page">
+
+
+
+    <form action="/person/person_set_action" name="form1" id="form1" method="post" enctype="multipart/form-data">
+
+
+        <input type="hidden" name="idx" id="idx" value="@idx" />
+        <input type="hidden" name="edit_date" id="idx" value="@Model.edit_date" />
+
+
+        @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        <div class="sub_title_black">
+            @SmartFactory.Util.get_word.language_code(language, "Personnelmanagement")
+        </div>
+
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "name")</label>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.user_name, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label" rel="tooltip" title="주민번호 앞번호 7자"> @SmartFactory.Util.get_word.language_code(language, "registrationnumber")</label>
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.user_id, new { htmlAttributes = new { @class = "form-control",@maxlength="7" , @onkeydown = "return onlyNumber(event)", @onkeyup = "removeChar(event)"} })
+
+            </div>
+            <label class="col-sm-8 control-label" style="text-align:left;padding:10px">  <i class="fa fa-check-circle"></i>  주민번호 앞번호 7자만</label>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "tel")</label>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.user_tel, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "Address")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.user_addr, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "email")</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.user_email, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "company")</label>
+            <div class="col-md-3">
+                @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "department")</label>
+            <div class="col-md-3">
+                @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "position")</label>
+            <div class="col-md-4">
+                @Html.DropDownList("code_position_idx", (SelectList)ViewBag.직책, new { @class = "selectpicker", @onchange = "search_it()" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "work_start_date")</label>
+            <div class="col-md-4">
+                <input type="text" name="work_start_date" id="work_start_date" class="form-control datetimepicker" style="max-width:120px" value="@work_start_date" />
+
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"> @SmartFactory.Util.get_word.language_code(language, "info") </label>
+            <div class="col-md-9">
+
+                @Html.TextAreaFor(a => a.info, new { Class = "form-control" })
+
+                <script>
+                    CKEDITOR.replace('info', {
+                        filebrowserUploadUrl: '/Board/BoardImageUpload?type=Files',
+                        filebrowserImageUploadUrl: '/Board/BoardImageUpload?type=Images',
+                        height: '200px',
+                        width: '100%'
+                    });
+                    CKEDITOR.on('dialogDefinition', function (ev) {
+                        // Take the dialog name and its definition from the event data.
+                        var dialogName = ev.data.name;
+                        var dialogDefinition = ev.data.definition;
+                        // Check if the definition is from the dialog we're
+                        // interested in (the 'image' dialog).
+                        if (dialogName == 'image') {
+                            // Get a reference to the 'Image Info' tab.
+
+                            dialogDefinition.removeContents('advanced');
+                            dialogDefinition.removeContents('Link');
+
+
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="title_sub col-md-2 ">
+                @SmartFactory.Util.get_word.language_code(language, "AttachFile")
+            </div>
+            <div class="col-md-8 ">
+
+
+                <div class="filebox">
+                    <input type="file" id="input_img" name="ImageFile" multiple>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        @if (Mode == "e")
+                                {
+        <div class="row">
+            <div id="dialog" style="display: none; z-index: 999;position:relative;top:0">
+                <img id="photo_big" />
+            </div>
+
+        </div>
+
+                                }
+        <div class="col-md-12">
+
+            @if (ViewBag.이미지리스트카운트 > 0)
+                                    {
+
+            @foreach (var item in ViewBag.이미지리스트 as List<Md_Image>)
+                                        {
+
+            <div class="card card-product" data-count="0" style="cursor: pointer; margin: 10px; width: 180px;">
+
+
+
+                <div class="card-image" data-header-animation="true">
+                    @if (item.file_ex.Contains("jpg"))
+                                                    {
+
+                    <img src="@item.ImagePath" style="cursor:pointer;" onclick="photo_show('Images','@item.ImagePath')" />
+                                                    }
+                                                    else
+                                                    {
+                    <img src="~/images/no_img.gif" style="width:100%" />
+
+                                                    }
+
+                </div>
+
+
+                <div class="card-content" style="padding: 10px">
+                    <div class="card-actions">
+
+
+                        <span class="mat-button-wrapper" onclick="check_one('D','@item.id','@item.Md_id')">
+                            <img src="~/images/common/s_icon_del.gif" style="width:15px" />
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats" style="font-size: 11px; padding:5px;text-align:center">
+                        <span>
+
+                            @if (item.r_date != null)
+                                                            {
+                                                                DateTime _date = Convert.ToDateTime(@item.r_date);
+                            <span>
+                                @_date.Year.@_date.Month.@_date.Day
+
+                            </span>
+                                                            }
+
+                        </span>
+                        <span style="margin-left:5px"> <img src="~/images/icon/@get_word.file_type(item.file_ex)" style="width:20px" />   </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+                     }
+
+                }
+
+        </div>
+
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                <div class="btn btn-default btn-fill btn-wd   btn-info" onclick=" save_it() ">
+                    @SmartFactory.Util.get_word.language_code(language, "save")
+                </div>
+
+
+                <div class="btn btn-default btn-fill btn-wd   btn-default" onclick="go('/samples/sample_list') ">
+
+                    @SmartFactory.Util.get_word.language_code(language, "backtolist")
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+
+
+
+
+
+</div>
+
+
+<script>
+
+    function save_it() {
+        check("title", "form1");
+    }
+    $(document).ready(function () {
+
+        demo.initFormExtendedDatetimepickers();
+
+    });
+
+
+</script>

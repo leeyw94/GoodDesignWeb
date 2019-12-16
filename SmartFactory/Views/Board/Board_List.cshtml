@@ -5,8 +5,24 @@
 @using SmartFactory.Util;
 
 
+@{string language = "korea";
 
-@{string language = "korea"; }
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+
+}
+
+
+
 @{
 
 
@@ -98,7 +114,7 @@
 
 
 }
-    <script type="text/javascript">
+<script type="text/javascript">
 
     $(document).ready(function () {
 
@@ -111,7 +127,7 @@
         if (search_all_type == "") {
             search_all_type = "1";
         }
-       
+
         if (file_show == "Y") {
             $(".file_show").css("display", "table-cell");
         }
@@ -167,7 +183,7 @@
 
     }
 
-    </script>
+</script>
 <style>
     .table thead tr {
         border-bottom: solid 2px #000 !important;
@@ -220,7 +236,7 @@
                 @SmartFactory.Util.get_word.language_code(language, "Create")
             </div>
 
-           
+
 
             <table class="tbl_azure">
                 <thead>
@@ -243,10 +259,10 @@
 
                         <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Writer")</th>
 
-                      
-                            <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Date")</th>
-                        
-                   
+
+                        <th style="width: 100px" class="text-center">@SmartFactory.Util.get_word.language_code(language, "Date")</th>
+
+
 
                     </tr>
                 </thead>
@@ -267,8 +283,8 @@
 
 
 
-                            <td class="file_show" >
-                                @{file_link(item.fileId);} 
+                            <td class="file_show">
+                                @{file_link(item.fileId);}
 
                             </td>
 
@@ -276,7 +292,7 @@
                             <td class="text-center">@item.writer</td>
                             <td class="text-center">
 
-                              @item.writeDate.ToShortDateString()
+                                @item.writeDate.ToShortDateString()
 
 
                             </td>
@@ -290,7 +306,7 @@
             {
                 <div class="row" style="margin:20px 0 5px 0;">
 
-                    <div class="col-md-2 btn btn-fill btn-info loading" style="float:right;width:110px;text-align:center ;cursor: pointer;background:#095eb1; border:0;" onclick="go_write()">
+                    <div class="col-md-2 btn btn-fill btn-info loading" style="float:right;width:110px;text-align:center ;cursor: pointer;" onclick="go_write()">
                         <span> @SmartFactory.Util.get_word.language_code(language, "create")</span>
                     </div>
 
@@ -358,7 +374,7 @@
 
         db_e db = new db_e();
 
-        var _list = (from a in db.BoardFile where a.Md_id == id && a.use_yn !="N" select a).ToList();
+        var _list = (from a in db.BoardFile where a.Md_id == id && a.use_yn != "N" select a).ToList();
 
         if (_list.Count > 0)
         {
@@ -367,27 +383,27 @@
 
                 string file_size = (Convert.ToDouble(item.file_size) / 1000).ToString("###,###") + "Kbyte";
 
-            <img src="/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" title="@file_size" onclick="file_down('@item.ImagePath','@item.fileName')" />
+                <img src="/images/icon/@get_word.file_type(item.file_ex)" style="width:20px;margin-right:10px;cursor:pointer" title="@file_size" onclick="file_down('@item.ImagePath','@item.fileName')" />
 
             }
         }
-        
-
-
-    }
 
 
 
     }
+
+
+
+}
 <form id="file_download" action="~/Board/GetDownload" method="post">
     <input type="hidden" id="link" name="link" />
     <input type="hidden" id="file_name" name="file_name" />
 
 </form>
 <script>
-    
-    function file_down(s,n ) {
-       
+
+    function file_down(s, n) {
+
         $("#link").attr("value", s);
         $("#file_name").attr("value", n);
         $("#file_download").submit();

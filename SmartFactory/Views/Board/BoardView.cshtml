@@ -177,10 +177,10 @@
                                         </div>
                                         <div id="user_edit"></div>
                                     </div>
-                                    <div class="col-md-12 text-right">
+                                    <div class="col-md-12 text-right" style="margin:10px 5px">
                                         @foreach (var item in ViewBag.읽은사람 as List<BoardRread>)
                                         {
-                                            <span style="margin-right:10px;color:#195c9d;font-size:1.1rem;">ㆍ @item.user_name @item.read_date.ToShortDateString()</span>
+                                            <span style="margin-right:10px;color:#195c9d;font-size:0.7rem;">ㆍ @item.user_name @item.read_date.ToString("yyyy.MM.dd HH:mm")</span>
                                         }
 
 
@@ -283,13 +283,13 @@
                                                     <label class="col-sm-2 control-label" style="max-width:100px;margin-bottom:10px;">비밀번호</label>
                                                     <div class="col-md-2" style="margin-bottom:10px;"><input type="password" name="non_password" id="non_password" class="form-control" /></div>
 
-                                                    <div class="col-md-1 btn btn-default btn-fill btn-wd   btn-info  " style="margin-right:10px;margin-bottom:20px;background:#095eb1;border:0;" onclick="non_member_login()">확인</div>
+                                                    <div class="col-md-1 btn btn-default btn-fill btn-wd   btn-info  " style="margin-right:10px;margin-bottom:20px;" onclick="non_member_login()">확인</div>
 
                                                     <div id="none_edit" class="col-md-1 btn btn-danger  btn-fill btn-wd  " style="margin-right:10px;display:none;background-color:#c9302c;border:0;" onclick="go('/board/BoardWrite?cate=@cate&idx=@Model.idx&t=@timecheck')"> 수정</div>
 
 
                                                 }
-                                                <div class="col-md-1 btn btn-default btn-fill btn-wd   btn-default loading" style="margin-right:10px;margin-bottom:20px;" onclick="go('/board/board_list?cate=@cate')">
+                                                <div class="col-md-1 btn btn-default btn-fill btn-wd   btn-default " style="margin-right:10px;margin-bottom:20px;" onclick="go('/board/board_list?cate=@cate')">
                                                     목록
 
                                                 </div>
@@ -300,7 +300,7 @@
                                             <div id="login_form" style="width:100%">
 
                                                 <div style="margin:0 auto;display:table ">
-                                                    <div class="col-md-4 btn  btn-fill    btn-info " style="margin-right:10px;display:table;width:100px;margin-bottom:20px;background:#095eb1;border:0;" onclick="go('/board/board_list?cate=@cate')">목록</div>
+                                                    <div class="col-md-4 btn  btn-fill  btn-default " style="margin-right:10px;display:table;width:100px;margin-bottom:20px;" onclick="go('/board/board_list?cate=@cate')">목록</div>
                                                     @if (ViewBag.권한 == "E" || ViewBag.권한 == "G")
                                                     {
                                                         <div class="col-md-4 btn  btn-danger  btn-fill   " style="display:table;width:100px;margin-bottom:20px;background-color:#c9302c;border:0;" onclick="go('/board/BoardWrite?cate=@cate&idx=@Model.idx&t=@timecheck')"> 수정</div>

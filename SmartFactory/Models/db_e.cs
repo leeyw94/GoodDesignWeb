@@ -69,6 +69,7 @@ namespace SmartFactory.Models
         public virtual DbSet<member_list> member_list { get; set; }
         public virtual DbSet<my_work> my_work { get; set; }
         public virtual DbSet<order> order { get; set; }
+        public virtual DbSet<person> person { get; set; }
         public virtual DbSet<photo> photo { get; set; }
         public virtual DbSet<project_act> project_act { get; set; }
         public virtual DbSet<project_dir> project_dir { get; set; }
@@ -1186,7 +1187,7 @@ namespace SmartFactory.Models
 
             modelBuilder.Entity<order>(entity =>
             {
-                entity.Property(e => e.code_work_idx).HasComment("진행 단계");
+                entity.Property(e => e.code_work_idx).HasComment("작업 상태");
 
                 entity.Property(e => e.company_idx).HasComment("주문처/구매처");
 
@@ -1233,6 +1234,53 @@ namespace SmartFactory.Models
                     .HasForeignKey(d => d.company_idx)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_order_company");
+            });
+
+            modelBuilder.Entity<person>(entity =>
+            {
+                entity.Property(e => e.edit_date)
+                    .HasDefaultValueSql("(getdate())")
+                    .HasComment("등록일");
+
+                entity.Property(e => e.fileId).IsUnicode(false);
+
+                entity.Property(e => e.use_yn).IsUnicode(false);
+
+                entity.Property(e => e.user_addr)
+                    .IsUnicode(false)
+                    .HasComment("주소");
+
+                entity.Property(e => e.user_email)
+                    .IsUnicode(false)
+                    .HasComment("이메일");
+
+                entity.Property(e => e.user_id)
+                    .IsUnicode(false)
+                    .HasComment("생년월일 성별 ");
+
+                entity.Property(e => e.user_name).IsUnicode(false);
+
+                entity.Property(e => e.user_sex)
+                    .IsUnicode(false)
+                    .HasComment("성별");
+
+                entity.Property(e => e.user_tel)
+                    .IsUnicode(false)
+                    .HasComment("연락처");
+
+                entity.Property(e => e.work_end_date).HasComment("퇴사일");
+
+                entity.Property(e => e.work_grade)
+                    .IsUnicode(false)
+                    .HasComment("정규직 : Y / 계약직 : C / 일용직 : T");
+
+                entity.Property(e => e.work_start_date)
+                    .HasDefaultValueSql("(getdate())")
+                    .HasComment("근무 시작일");
+
+                entity.Property(e => e.work_state).HasComment("근무 상태 코드 (재직 :1, 휴직:2 , 퇴사:9  )");
+
+                entity.Property(e => e.write_date).HasComment("등록일");
             });
 
             modelBuilder.Entity<photo>(entity =>
@@ -1482,12 +1530,6 @@ namespace SmartFactory.Models
                     .HasForeignKey(d => d.department_idx)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_user_department");
-
-                entity.HasOne(d => d.position_idxNavigation)
-                    .WithMany(p => p.user)
-                    .HasForeignKey(d => d.position_idx)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_user_code_position");
             });
 
             modelBuilder.Entity<user_mail>(entity =>

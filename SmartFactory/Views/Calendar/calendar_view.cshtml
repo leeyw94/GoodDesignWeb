@@ -230,14 +230,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 " style="float:right;margin:10px">
-                    @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "프로젝트 선택", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+                    @Html.DropDownList("project_idx", (SelectList)ViewBag.프로젝트, "프로젝트 선택", new { @class = "form-control, selectpicker", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
                 </div>
 
                 <div class="col-md-2 " style="float:right;margin:10px">
-                    @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, "부서선택", new { @class = "form-control", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
+                    @Html.DropDownList("department_idx", (SelectList)ViewBag.부서, "부서선택", new { @class = "form-control, selectpicker", @onchange = "rego()", @style = "width:100%;border:solid 1px #a9a9a9;font-size:0.9em;color:#444" })
                 </div>
             </div>
-            <hr />
             <div class="col-md-12">
                 <div style="display: table; min-width: 320px;">
                     <div id='calendar'></div>

@@ -3720,3 +3720,676 @@ E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb\Smart
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_list.cshtml.g.cs
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_set.cshtml.g.cs
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.Development.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.StaticWebAssets.xml
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.exe
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.deps.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.dev.json
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.pdb
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\LazZiya.ImageResize.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.Views.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csprojAssemblyReference.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.Manifest.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.xml
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfoInputs.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfo.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.input.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.output.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorCoreGenerate.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardView.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardWrite.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\Board_List.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_view.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_index.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_position.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Delete.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Details.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Edit.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\Pager\Bootstrap5.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout2.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout_none.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_left.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_top.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Sign\checkUser.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\setting_menu.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_info.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set_list.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cache
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csproj.CopyComplete
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.Development.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.StaticWebAssets.xml
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.exe
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.deps.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.dev.json
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.pdb
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\LazZiya.ImageResize.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Google.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.Views.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csprojAssemblyReference.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.Manifest.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.xml
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfoInputs.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfo.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.input.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.output.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorCoreGenerate.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardView.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardWrite.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\Board_List.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_view.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_index.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_position.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Delete.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Details.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Edit.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\Pager\Bootstrap5.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout2.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout_none.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_left.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_top.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Sign\checkUser.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\setting_menu.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_info.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set_list.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cache
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cs
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csproj.CopyComplete
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.Development.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.StaticWebAssets.xml
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.exe
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.deps.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.runtimeconfig.dev.json
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.pdb
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\LazZiya.ImageResize.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.Google.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.Views.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ReflectionIT.Mvc.Paging.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csprojAssemblyReference.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.Manifest.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\staticwebassets\SmartFactory.StaticWebAssets.xml
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.MvcApplicationPartsAssemblyInfo.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorAssemblyInfo.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfoInputs.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.AssemblyInfo.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.input.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.TagHelpers.output.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorCoreGenerate.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardView.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\BoardWrite.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\Board_List.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Board\board_set_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Calendar\calendar_view.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_index.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_nationality_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\code\code_position.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Machine_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Material_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\management\Product_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Production\Order_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Delete.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Details.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\Edit.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\samples\sample_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\Pager\Bootstrap5.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout2.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout_none.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_left.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_top.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\Sign\checkUser.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\company_set_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\department_set_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\setting_menu.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_info.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\user_set_list.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cache
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.RazorTargetAssemblyInfo.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.Views.pdb
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csproj.CopyComplete
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\person\person_set.cshtml.g.cs
+E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\language_set.cshtml.g.cs

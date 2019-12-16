@@ -1,0 +1,268 @@
+﻿@model SmartFactory.Models.language
+
+
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+@{string language = "korea";
+
+    try
+    {
+        language = Context.Request.Cookies["language"] ?? "korea";
+
+    }
+    catch
+    {
+
+
+    }
+
+    string page_site = "xx";    
+    string urlcheck = Context.Request.Path; 
+    string page_directory = urlcheck.Split('/')[1];
+
+    try
+    {
+        page_site = urlcheck.Split('/')[2] ;
+    }
+    catch
+    {
+        page_site = "index";
+    }
+
+}
+
+<script src="~/Content/Board/Board.js"></script>
+<script src="~/Content/Board/moment.min.js"></script>
+@{
+    string url = Context.Request.Path;
+    string url_action = "language_action";
+
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+
+                <div class="content">
+
+
+
+                    <form id="form3" action="@url_action" method="post">
+
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="idx" id="idx" value="@Context.Request.Query["idx"]" />
+
+
+
+                        <div class="form-horizontal">
+                            <div class="sub_title_black">
+                                언어 등록
+                            </div>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+                            <div class="form-group">
+                                <span class="control-label col-md-3">코드 이름</span>
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.code_name, new { htmlAttributes = new { @class = "form-control" } })
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="control-label col-md-3">한국어</span>
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.korea, new { htmlAttributes = new { @class = "form-control" } })
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="control-label col-md-3">영어</span>
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.english, new { htmlAttributes = new { @class = "form-control" } })
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <hr />
+
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-md-12" style="display: table; margin: 20px; text-align: center;">
+                                    @if (string.IsNullOrEmpty(Context.Request.Query["idx"]))
+                                    {
+                                        <div class=" btn btn-default btn-fill btn-wd   btn-info" style="margin-right:5px" onclick="save_it() ">
+                                            Save
+                                        </div>
+
+                                    }
+                                    else
+                                    { <div class=" btn btn-default btn-fill btn-wd   btn-info" style="margin-right:5px" onclick="save_it() ">
+                                            Save
+                                        </div>
+
+                                        <div class=" btn btn-default btn-fill btn-wd   btn-default" style="margin-right:5px" onclick="reload_it() ">
+                                            Refresh
+                                        </div>
+                                    }
+
+
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @{ order_link("code_name", page_site, language);}
+                                </th>
+
+                                <th>
+                                    @{ order_link("korea", page_site, language);}
+                                </th>
+                                <th>
+                                    @{ order_link("english", page_site, language);}
+                                </th>
+
+
+                                <th>
+                                    EDIT
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.리스트)
+                            {
+                                <tr>
+
+
+                                    <td>
+                                        @item.code_name
+
+                                    </td>
+
+                                    <td>
+                                        @item.korea
+
+                                    </td>
+                                    <td>
+                                        @item.english
+                                    </td>
+
+
+
+                                    <td style="width:60px">
+
+
+                                        <span onclick="go_edit(@item.idx)" style="margin-right:5px;cursor:pointer" rel="tooltip" title="Edit"> <img src="~/images/common/s_edit_icon.gif" /></span>
+                                        <span onclick="go_del(@item.idx)" style="cursor:pointer" rel="tooltip" title="영구 삭제">
+                                            <img src="~/images/common/s_icon_del.gif" />
+                                        </span>
+
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+
+     function go_edit(i) {
+     var _url =  "@url";
+     location.href= _url+"?idx="+i;
+
+    }
+     function reload_it() {
+
+        var _url = "@url";
+     location.href= _url;
+
+     }
+
+     function save_it() {
+
+     check("company_idx,code_name", "form3");
+
+     }
+
+
+   function go_del(i) {
+
+
+      if (confirm("Are you sure you want to disable the selected item?")) {
+     var _url = "@url_action";
+     location.href= _url+"?idx="+i+"&mode_type=D&re_url=@url";
+
+      }
+    else{ return false;}
+
+
+
+
+
+    }
+
+
+
+</script>
+
+@functions {
+
+    public void order_link(string what, string page_site, string language)
+    {
+        if (Context.Request.Query["sortExpression"] == "-" + what)
+        {
+          
+
+            <a href="@page_site?sortExpression=@what">▲ @SmartFactory.Util.get_word.language_code(language, what)</a>
+
+        }
+        else
+        {
+            page_site = page_site.Replace("sortExpression=", "");
+            <a href="@page_site?sortExpression=-@what">▼ @SmartFactory.Util.get_word.language_code(language, what)</a>
+        }
+
+    }
+}

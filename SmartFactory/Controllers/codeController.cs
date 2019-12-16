@@ -146,8 +146,10 @@ namespace SmartFactory.Controllers
 
 
 
-            public ActionResult code_position(code_position doc, int? idx)
+            public ActionResult code_position(code_position doc, int? idx, int? company_idx)
         {
+
+
 
           
             ViewBag.타이틀 = "직책 코드";
@@ -166,7 +168,14 @@ namespace SmartFactory.Controllers
                     doc = db.code_position.Single(x => x.code_id == idx);
             }
 
-            var _list = db.code_position.Include(p=>p.company_idxNavigation).Where(p => p.use_yn != "N").OrderBy(o => o.index_order);
+            var _list = db.code_position.Include(p => p.company_idxNavigation).Where(p => p.use_yn != "N" ).OrderBy(o => o.index_order);
+
+            if (company_idx != null)
+            {
+                _list = _list.Where(p=>p.company_idx == company_idx).OrderBy(o => o.index_order);
+            }
+
+              
             ViewBag.리스트 = _list;
 
             return View(doc);

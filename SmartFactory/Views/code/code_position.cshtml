@@ -11,7 +11,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <div class="card">
 
                 <div class="content">
@@ -30,7 +30,7 @@
 
                         <div class="form-horizontal">
                             <div class="sub_title_black">
-                                <img src="~/images/common/bullet01.png" style="margin-right:10px" /> @code_what
+                               @code_what
                             </div>
                             <hr />
                             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -39,24 +39,24 @@
 
 
                             <div class="form-group">
-                                <span class="control-label col-md-3">회사</span>
-                                <div class="col-md-4">
-                                    @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, "No Select", new { @class = "selectpicker M_category" })
+                                <span class="control-label col-md-4">회사</span>
+                                <div class="col-md-8">
+                                    @Html.DropDownList("company_idx", (SelectList)ViewBag.회사, "No Select", new { @class = "selectpicker ",@onchange = "reload_it()" })
                                 </div>
                             </div>
 
 
                             <div class="form-group">
-                                <span class="control-label col-md-3">코드 이름</span>
-                                <div class="col-md-4">
+                                <span class="control-label col-md-4">코드 이름</span>
+                                <div class="col-md-8">
                                     @Html.EditorFor(model => model.code_name, new { htmlAttributes = new { @class = "form-control" } })
 
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <span class="control-label col-md-3">메모</span>
-                                <div class="col-md-4">
+                                <span class="control-label col-md-4">메모</span>
+                                <div class="col-md-8">
                                     @Html.EditorFor(model => model.gubun, new { htmlAttributes = new { @class = "form-control" } })
 
                                 </div>
@@ -64,7 +64,7 @@
 
 
                             <div class="form-group">
-                                <span class="control-label col-md-3" rel="tooltip" title="정렬순서">Index Order</span>
+                                <span class="control-label col-md-4" rel="tooltip" title="정렬순서">Index Order</span>
                                 <div class="col-md-4">
                                     @Html.EditorFor(model => model.index_order, new { htmlAttributes = new { @class = "form-control", @onkeydown = "return onlyNumber(event)", @onkeyup = "removeChar(event)", @maxlength = "3" } })
                                     @Html.ValidationMessageFor(model => model.index_order, "", new { @class = "text-danger" })
@@ -108,12 +108,15 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-7">
             <div class="card">
                 <div class="content">
                     <table class="table">
                         <thead>
                             <tr>
+                                <th>
+                                   회사 명
+                                </th>
                                 <th>
                                     ID
                                 </th>
@@ -121,10 +124,10 @@
                                     코드 이름
                                 </th>
                                 <th>
-                                   코드 이름 영문
+                                    코드 이름 영문
                                 </th>
                                 <th>
-                                  메모
+                                    메모
                                 </th>
                                 <th>
                                     정렬 순서(옵션)
@@ -137,42 +140,49 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in ViewBag.리스트)
+                            @foreach (var item in ViewBag.리스트 )
                             {
-                                <tr>
-                                    <td style="padding:5px">
+                            <tr>
+                                <td style="padding:5px">
 
-                                        @item.code_id
+                                    @item.company_idxNavigation.company_name
 
-                                    </td>
-
-                                    <td>
-                                        @item.code_name
-
-                                    </td>
-
-                                    <td>
-                                        @item.code_name_en
-
-                                    </td>
-                                    <td>
-                                        @item.gubun
-                                    </td>
-                                    <td>
-                                        @item.index_order
-                                    </td>
+                                </td>
 
 
-                                    <td style="width:60px">
+                                <td style="padding:5px">
+
+                                    @item.code_id
+
+                                </td>
+
+                                <td>
+                                    @item.code_name
+
+                                </td>
+
+                                <td>
+                                    @item.code_name_en
+
+                                </td>
+                                <td>
+                                    @item.gubun
+                                </td>
+                                <td>
+                                    @item.index_order
+                                </td>
 
 
-                                        <span onclick="go_edit(@item.code_id)" style="margin-right:5px;cursor:pointer" rel="tooltip" title="Edit"> <img src="~/images/common/s_edit_icon.gif" /></span>
-                                        <span onclick="go_del(@item.code_id)" style="cursor:pointer" rel="tooltip" title="사용안함">
-                                            <img src="~/images/common/s_icon_del.gif" />
-                                        </span>
+                                <td style="width:60px">
 
-                                    </td>
-                                </tr>
+
+                                    <span onclick="go_edit(@item.code_id)" style="margin-right:5px;cursor:pointer" rel="tooltip" title="Edit"> <img src="~/images/common/s_edit_icon.gif" /></span>
+                                    <span onclick="go_del(@item.code_id)" style="cursor:pointer" rel="tooltip" title="사용안함">
+                                        <img src="~/images/common/s_icon_del.gif" />
+                                    </span>
+
+                                </td>
+                            </tr>
                             }
                         </tbody>
                     </table>
@@ -203,8 +213,9 @@
     }
      function reload_it() {
 
-        var _url = "@url";
-     location.href= _url;
+        var company_idx = $("#company_idx").val();
+        var _url = "@url"+"?company_idx="+company_idx;
+       location.href= _url;
 
      }
 

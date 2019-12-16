@@ -67,9 +67,6 @@ namespace SmartFactory.Models
         [ForeignKey(nameof(department_idx))]
         [InverseProperty(nameof(department.user))]
         public virtual department department_idxNavigation { get; set; }
-        [ForeignKey(nameof(position_idx))]
-        [InverseProperty(nameof(code_position.user))]
-        public virtual code_position position_idxNavigation { get; set; }
         [InverseProperty("user_")]
         public virtual ICollection<BoardRread> BoardRread { get; set; }
         [InverseProperty("user_")]
