@@ -1832,3 +1832,5 @@ E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) 
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Release\netcoreapp3.0\SmartFactory.dll
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Release\netcoreapp3.0\SmartFactory.pdb
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Release\netcoreapp3.0\Razor\Views\sys\language_set.cshtml.g.cs
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb_5\SmartFactory\obj\Release\netcoreapp3.0\SmartFactory.dll
+D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\GoodDesignWeb_5\SmartFactory\obj\Release\netcoreapp3.0\SmartFactory.pdb
