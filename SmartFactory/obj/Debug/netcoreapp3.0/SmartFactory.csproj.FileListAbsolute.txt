@@ -3942,6 +3942,7 @@ D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignW
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.csproj.CopyComplete
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
 D:\03. 프로젝트 _ 김지혜\4. GoodDesign SmarFactory Web\백업\GoodDesignWeb4\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
+<<<<<<< HEAD
 F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.dll
 F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
 F:\공유폴더\01. 김지혜 대리\03. 스마트팩토리(굿디자인)\GoodDesignWeb4 (2)\SmartFactory\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -4393,3 +4394,5 @@ E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) 
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\SmartFactory.pdb
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\person\person_set.cshtml.g.cs
 E:\00. 프로젝트 홈작업\00. GoodDesign SmarFactory Web\GoodDesignWeb4 (2) (2)\SmartFactory\obj\Debug\netcoreapp3.0\Razor\Views\sys\language_set.cshtml.g.cs
+=======
+>>>>>>> 2421aad914103777436f6fd82f3efecdeb1c825e

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb4 (2) (2)\\SmartFactory\\SmartFactory.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb4 (2) (2)\\SmartFactory\\SmartFactory.csproj",
         "packagesPath": "C:\\Users\\헤레나\\.nuget\\packages\\",
         "outputPath": "E:\\00. 프로젝트 홈작업\\00. GoodDesign SmarFactory Web\\GoodDesignWeb4 (2) (2)\\SmartFactory\\obj\\",
+=======
+    "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\백업\\GoodDesignWeb4\\SmartFactory\\SmartFactory.csproj": {}
+  },
+  "projects": {
+    "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\백업\\GoodDesignWeb4\\SmartFactory\\SmartFactory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\백업\\GoodDesignWeb4\\SmartFactory\\SmartFactory.csproj",
+        "projectName": "SmartFactory",
+        "projectPath": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\백업\\GoodDesignWeb4\\SmartFactory\\SmartFactory.csproj",
+        "packagesPath": "C:\\Users\\helpb\\.nuget\\packages\\",
+        "outputPath": "D:\\03. 프로젝트 _ 김지혜\\4. GoodDesign SmarFactory Web\\백업\\GoodDesignWeb4\\SmartFactory\\obj\\",
+>>>>>>> 2421aad914103777436f6fd82f3efecdeb1c825e
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
